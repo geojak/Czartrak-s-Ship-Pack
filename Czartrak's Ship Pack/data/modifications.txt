@@ -12,7 +12,6 @@
 
 shipyard modships
 	"Battleship"
-	"Patrol Boat"
 	"Battlecruiser"
 	"Destroyer"
 	"Navy Freighter"
@@ -20,3 +19,4 @@ shipyard modships
 	"Pug Zambor"
 	"Pug Mazdar"
 	"Pug Emborbor"
+	"Nesasio"

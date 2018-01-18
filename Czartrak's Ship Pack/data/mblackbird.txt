@@ -1,0 +1,125 @@
+ship "Marauder Blackbird"
+	sprite "ship/mblackbird"
+	attributes
+		category "Light Warship"
+		"cost" 2530000
+		"shields" 4750
+		"hull" 980
+		"required crew" 5
+		"bunks" 16
+		"mass" 260
+		"drag" 5.0
+		"heat dissipation" .7
+		"fuel capacity" 700
+		"cargo space" 35
+		"outfit space" 390
+		"weapon capacity" 110
+		"engine capacity" 130
+		weapon
+			"blast radius" 60
+			"shield damage" 600
+			"hull damage" 300
+			"hit force" 900
+	outfits
+		"Heavy Laser Turret" 2
+		"Sidewinder Missile" 125
+		"Sidewinder Missile Launcher" 2
+		"Sidewinder Missile Rack"
+		
+		"NT-200 Nucleovoltaic"
+		"LP036a Battery Pack"
+		"LP072a Battery Pack"
+		"D41-HY Shield Generator"
+		"Small Radar Jammer"
+		"Laser Rifle" 16
+		"Security Station" 3
+		
+		"A375 Atomic Steering"
+		"A520 Atomic Thruster"
+		"Hyperdrive"
+		
+	engine 0 68
+	engine -40 60
+	engine 40 60
+	gun -12 -60 "Sidewinder Missile Launcher"
+	gun 12 -60 "Sidewinder Missile Launcher"
+	turret -18 0 "Heavy Laser Turret"
+	turret 18 0 "Heavy Laser Turret"
+	explode "tiny explosion" 15
+	explode "small explosion" 34
+	explode "medium explosion" 18
+	explode "large explosion" 2
+	"final explode" "final explosion small"
+	description "The Tarazed Blackbird was originally design to be a high-class passenger transport. Evidently this ships previous owner had something else in mind with it. It has been heavily modified to be a lightning fast striking warship with two added gun ports at the front and extra shield emitters and hull plating all over the hull. To fit the extensive modifications most of the passenger bunks and cargo space were converted."
+	
+fleet "Marauder fleet I"
+	add variant 9
+		"Marauder Blackbird"
+		"Marauder Arrow (Engines)"
+		"Marauder Bounder (Weapons)"
+	add variant 9
+		"Marauder Blackbird"
+		"Marauder Arrow (Weapons)"
+		"Marauder Bounder (Engines)"
+	add variant 1
+		"Marauder Blackbird"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+	
+fleet "Marauder fleet II"
+	add variant 4
+		"Marauder Blackbird"
+		"Marauder Arrow (Engines)"
+		"Marauder Bounder (Weapons)"
+	add variant 4
+		"Marauder Blackbird"
+		"Marauder Arrow (Weapons)"
+		"Marauder Bounder (Engines)"
+	add variant 1
+		"Marauder Blackbird"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+		
+fleet "Marauder fleet III"
+	add variant 3
+		"Marauder Blackbird"
+		"Marauder Arrow (Engines)"
+		"Marauder Bounder (Weapons)"
+	add variant 3
+		"Marauder Blackbird"
+		"Marauder Arrow (Weapons)"
+		"Marauder Bounder (Engines)"
+	add variant 1
+		"Marauder Blackbird"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+		
+fleet "Marauder fleet X"
+	add variant 1
+		"Marauder Falcon (Weapons)"
+		"Marauder Firebird (Engines)"
+		"Marauder Blackbird"
+		"Marauder Quicksilver"
+		"Marauder Arrow"
+		"Marauder Bounder"
+	add variant 1
+		"Marauder Falcon (Engines)"
+		"Marauder Firebird (Weapons)"
+		"Marauder Blackbird"
+		"Marauder Quicksilver"
+		"Marauder Arrow"
+		"Marauder Bounder"
+	add variant 1
+		"Marauder Leviathan (Engines)"
+		"Marauder Firebird (Weapons)"
+		"Marauder Blackbird"
+		"Marauder Quicksilver"
+		"Marauder Arrow"
+		"Marauder Bounder"
+	add variant 1
+		"Marauder Leviathan (Weapons)"
+		"Marauder Firebird (Engines)"
+		"Marauder Blackbird"
+		"Marauder Quicksilver"
+		"Marauder Arrow"
+		"Marauder Bounder"

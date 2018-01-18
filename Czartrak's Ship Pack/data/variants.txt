@@ -3,42 +3,35 @@ ship "Battleship" "Battleship (Mark II)"
 		Hyperdrive
 		"A860 Atomic Thruster"
 		"A525 Atomic Steering"
-		"Electron Turret" 6
+		"Electron Turret" 4
+		"Electron Beam" 2
 		"D94-YV Shield Generator"
 		"Large Radar Jammer"
-		"Laser Rifle" 209
+		"Laser Rifle" 205
 		"Liquid Helium Cooler"
 		"LP288a Battery Pack"
-		"D23-QP Shield Generator"
-		"Heavy Anti-Missile Turret" 4
+		"Heavy Anti-Missile Turret" 2
 		"Fragmentation Grenades" 65
 		"Armageddon Core"
 		"Typhoon Launcher" 2
 		"Typhoon Torpedo" 90
-		"Sidewinder Missile Launcher" 2
-		"Sidewinder Missile Rack" 2
-		"Sidewinder Missile" 150
 		"Typhoon Storage Tube" 2
-	engine -38 220 1
-	engine 38 220 1
-	gun -31 -200 "Sidewinder Missile Launcher"
+	gun -31 -200 "Typhoon Launcher"
 	gun 31 -200 "Typhoon Launcher"
-	gun -22 -209 "Typhoon Launcher"
-	gun 22 -209 "Sidewinder Missile Launcher"
+	gun -22 -209 "Electron Beam"
+	gun 22 -209 "Electron Beam"
 	turret 0 -104 "Heavy Anti-Missile Turret"
 	turret 0 27 "Heavy Anti-Missile Turret"
 	turret 45 23 "Electron Turret"
 	turret -45 23 "Electron Turret"
-	turret -13 153 "Heavy Anti-Missile Turret"
-	turret 13 153 "Heavy Anti-Missile Turret"
+	turret -13 153
+	turret 13 153
 	turret -48 -64 "Electron Turret"
-	turret -48 111 "Electron Turret"
+	turret -48 111
 	turret 48 -64 "Electron Turret"
-	turret 48 111 "Electron Turret"
+	turret 48 111 
 	
-ship Battlecruiser "Battlecruiser (Mark II)"
-	sprite ship/battlecruiser
-	attributes
+ship "Battlecruiser" "Battlecruiser (Mark II)"
 	outfits
 		Hyperdrive
 		"Outfits Expansion" 2
@@ -58,8 +51,6 @@ ship Battlecruiser "Battlecruiser (Mark II)"
 		"Sidewinder Missile" 175
 		"Sidewinder Missile Rack" 3
 		"Meteor Missile Box" 2
-	engine -40 146 1
-	engine 40 146 1
 	gun 28 -84 "Meteor Missile Launcher"
 	gun 38 -75 "Sidewinder Missile Launcher"
 	gun -28 -84 "Sidewinder Missile Launcher"
@@ -72,7 +63,7 @@ ship Battlecruiser "Battlecruiser (Mark II)"
 	turret 28 80 "Electron Turret"
 	turret -28 80 "Electron Turret"
 	
-ship Destroyer "Destroyer (Mark II)"
+ship "Destroyer" "Destroyer (Mark II)"
 	outfits
 		Hyperdrive
 		"A250 Atomic Thruster"
@@ -84,8 +75,6 @@ ship Destroyer "Destroyer (Mark II)"
 		"D41-HY Shield Generator"
 		"Sidewinder Missile Launcher" 2
 		"Sidewinder Missile" 100
-	engine -26.5 116 1
-	engine 26.5 116 1
 	gun 24.5 -53.5
 	gun 29 -49 "Sidewinder Missile Launcher"
 	gun -25.5 -53 "Sidewinder Missile Launcher"
@@ -95,3 +84,53 @@ ship Destroyer "Destroyer (Mark II)"
 	turret -0 -6.5 "Electron Turret"
 	turret -28 47 "Electron Turret"
 	turret 28 47 "Electron Turret"
+	
+	
+ship "Sentinel" "Sentinel (Plasma)"
+	outfits
+		"Plasma Cannon" 11
+		"Anti-Missile Turret" 
+		"Fusion Reactor"
+		"KP-6 Photovoltaic Array" 4
+		"LP144a Battery Pack"
+		"S-970 Regenerator" 
+		"S-270 Regenerator"
+		"Liquid Helium Cooler" 
+		"Fuel Pod" 
+		"X4700 Ion Thruster"
+		"X5200 Ion Steering"
+		"Ionic Afterburner"
+		"Hyperdrive"
+		
+ship "Sentinel" "Sentinel (Particle)"
+	outfits
+		Hyperdrive
+		"A860 Atomic Thruster"
+		"A125 Atomic Steering"
+		"A525 Atomic Steering"
+		Torpedo 120
+		"LP144a Battery Pack"
+		"Particle Cannon" 7
+		"Torpedo Launcher" 4
+		"KP-6 Photovoltaic Array"
+		"Liquid Helium Cooler"
+		"S-970 Regenerator"
+		"Small Radar Jammer"
+		"Armageddon Core"
+		"S-270 Regenerator"
+		"Laser Rifle" 60
+		"Security Station" 2
+		"Water Coolant System"
+		"Anti-Missile Turret"
+	gun 0 -132 "Particle Cannon"
+	gun 0 -132 "Particle Cannon"
+	gun 0 -132 "Particle Cannon"
+	gun -22 -122 "Particle Cannon"
+	gun -22 -122 "Particle Cannon"
+	gun 22 -122 "Particle Cannon"
+	gun 22 -122 "Particle Cannon"
+	gun -21 -45 "Torpedo Launcher"
+	gun 21 -45 "Torpedo Launcher"
+	gun -31 -45 "Torpedo Launcher"
+	gun 31 -45 "Torpedo Launcher"
+	turret 0 40 "Anti-Missile Turret"

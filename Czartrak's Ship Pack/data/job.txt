@@ -1,0 +1,39 @@
+mission "Bounty Hunting (huge)"
+	name "Hunt down <npc>"
+	description "A pirate vessel named <npc> has been attacking merchants near the <system> system. Destroy it and return to <planet> for payment (<payment>)."
+	repeat
+	job
+	to offer
+		"combat rating" > 600
+		random < 20
+		has "main plot completed"	
+	source
+		government Republic "Free Worlds" Syndicate Neutral
+		attributes rim south north "dirt belt" core frontier
+	npc kill
+		personality heroic staying nemesis target
+		government Bounty
+		system
+			distance 1 2
+		fleet
+			names "pirate"
+			variant 3
+				"Dreadnought"
+			variant 1
+				"Bactrian (Hai Engines)"
+			variant 1
+				"Bactrian (Hai Weapons)"
+			variant 1
+				"Bactrian (Hired Gun)"
+			variant 1
+				"Kestrel (More Weapons)"
+			variant 1
+				"Kestrel (More Shields)"
+			variant 1
+				"Kestrel (More Engines)"
+			variant 3
+				"Sentinel (Particle)"
+		dialog "The <npc> has been eliminated. You can claim the bounty payment by returning to <destination>."
+	on complete
+		payment 300000
+		dialog "The government of <planet> gratefully pays you <payment> for eliminating the <npc>."
