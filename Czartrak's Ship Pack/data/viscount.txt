@@ -1,4 +1,3 @@
-
 ship "Viscount"
 	sprite "ship/viscount"
 	attributes
@@ -6,19 +5,19 @@ ship "Viscount"
 		licenses
 			Navy
 			Carrier
-		"cost" 48000000
-		"shields" 47400
+		"cost" 35000000
+		"shields" 32400
 		"hull" 11600
 		"required crew" 397
 		"bunks" 456
-		"mass" 1240
+		"mass" 2440
 		"drag" 51.6
-		"heat dissipation" .7
+		"heat dissipation" .35
 		"fuel capacity" 1000
 		"cargo space" 250
-		"outfit space" 1566
-		"weapon capacity" 476
-		"engine capacity" 334
+		"outfit space" 1036
+		"weapon capacity" 376
+		"engine capacity" 234
 		weapon
 			"blast radius" 260
 			"shield damage" 2600
@@ -28,33 +27,31 @@ ship "Viscount"
 	
 		Hyperdrive
 		"X5700 Ion Thruster"
-		"X5200 Ion Steering" 2
+		"X5200 Ion Steering" 
 		Torpedo 120
 		"Torpedo Launcher" 4
-		"Heavy Laser Turret" 4
+		"Quad Blaster Turret" 6
 		"D94-YV Shield Generator" 2
-		Ramscoop 4
-		"Liquid Helium Cooler" 3
-		"Large Radar Jammer" 2
-		"Heavy Anti-Missile Turret" 4
-		"Security Station" 4
-		"Laser Rifle" 320
-		"Fragmentation Grenades" 220
+		"Liquid Helium Cooler"
+		"Large Radar Jammer"
+		"Heavy Anti-Missile Turret" 2
+		"Laser Rifle" 400
+		"Fragmentation Grenades" 325
 		"LP576a Battery Pack"
-		"Armageddon Core" 2
+		"Armageddon Core"
 		
-	turret 52.5 -178.5
-	turret 52.5 -110
-	turret 51.5 -58.5
-	turret -50 -177.5
-	turret -50 -110
-	turret -50 -58.5
-	turret -50 5
-	turret 51.5 5
-	gun 38.5 -256
-	gun 26 -267.5
-	gun -25 -268.5
-	gun -37.5 -255
+	turret 52.5 -178.5 "Quad Blaster Turret"
+	turret 52.5 -110 "Quad Blaster Turret"
+	turret 51.5 -58.5 "Heavy Anti-Missile Turret"
+	turret -50 -177.5 "Quad Blaster Turret"
+	turret -50 -110 "Quad Blaster Turret"
+	turret -50 -58.5 "Heavy Anti-Missile Turret"
+	turret -50 5 "Quad Blaster Turret"
+	turret 51.5 5 "Quad Blaster Turret"
+	gun 38.5 -256 "Torpedo Launcher"
+	gun 26 -267.5 "Torpedo Launcher"
+	gun -25 -268.5 "Torpedo Launcher"
+	gun -37.5 -255 "Torpedo Launcher"
 	engine -86 282.5
 	engine -50 258.5
 	engine 87.5 278.5
@@ -69,4 +66,4 @@ ship "Viscount"
 	explode "large explosion" 45
 	explode "huge explosion" 30
 	"final explode" "final explosion large"
-	description "The Viscount is the Republics premier flagship and costs more than a large fleet and is only given to those who are considered to be vital to humanity and have been given the highest levels of clearence by the government"
+	description "The Viscount is the Republics premier flagship and costs more than a large fleet and is only given to those who are considered to be vital to humanity and have been given the highest levels of clearance by the government"

@@ -1,22 +1,30 @@
-
 ship "Viscount""Viscount (Mark II)"
 	outfits
 		Hyperdrive
 		"A860 Atomic Thruster"
-		"A250 Atomic Thruster"
-		"Electron Turret" 4
-		"A255 Atomic Steering"
-		"A525 Atomic Steering" 2
-		"Typhoon Torpedo" 120
-		"Typhoon Launcher" 4
-		"D94-YV Shield Generator" 2
+		"A865 Atomic Steering"
 		"Liquid Nitrogen Cooler"
-		Ramscoop 4
-		"LP576a Battery Pack"
-		"Heavy Anti-Missile Turret" 4
-		"Liquid Helium Cooler" 3
-		"Armageddon Core" 2
-		"Fragmentation Grenades" 220
+		"Heavy Laser Turret" 2
+		"D94-YV Shield Generator" 2
+		"Armageddon Core"
+		"Fragmentation Grenades" 325
+		"Laser Rifle" 400
+		"Heavy Anti-Missile Turret" 2
 		"Large Radar Jammer"
-		"Security Station" 4
-		"Laser Rifle" 320
+		"LP288a Battery Pack"
+		"Typhoon Torpedo" 210
+		"Laser Turret" 4
+		"Typhoon Launcher" 4
+		"Typhoon Storage Tube" 6
+	turret 52.5 -178.5 "Laser Turret"
+	turret 52.5 -110 "Laser Turret"
+	turret 51.5 -58.5 "Heavy Anti-Missile Turret"
+	turret -50 -177.5 "Laser Turret"
+	turret -50 -110 "Laser Turret"
+	turret -50 -58.5 "Heavy Anti-Missile Turret"
+	turret -50 5 "Heavy Laser Turret"
+	turret 51.5 5 "Heavy Laser Turret"
+	gun 38.5 -256 "Typhoon Launcher"
+	gun 26 -267.5 "Typhoon Launcher"
+	gun -25 -268.5 "Typhoon Launcher"
+	gun -37.5 -255 "Typhoon Launcher"

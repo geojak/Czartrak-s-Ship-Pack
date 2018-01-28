@@ -1,14 +1,24 @@
+fleet "Navy Surveillance"
+	add variant 2
+		"Nesasio"
+		"Surveillance Drone" 2
+	add variant 1
+		"Nesasio" 2
+		"Surveillance Drone" 4
+		
 fleet "Large Republic"
 	add variant 1
 		"Battleship"
 		"Destroyer" 2
 	add variant 2
 		"Battlecruiser"
-		"Nesasio" 2
+		"Nesasio" 1
+		"Combat Drone" 2
 	add variant 4
 		"Battleship"
 	add variant 5
 		"Nesasio" 2
+		"Combat Drone" 4
 	add variant 5
 		"Battlecruiser"
 	add variant 4
@@ -40,10 +50,12 @@ fleet "Republic Freight"
 		"Rainmaker"
 	variant 2
 		"Nesasio" 1
+		"Combat Drone" 2
 		"Frigate" 2
 		"Navy Freighter" 2
 	variant 1
 		"Nesasio" 2
+		"Combat Drone" 4
 		"Navy Freighter" 1
 	variant 3
 		"Destroyer" 2

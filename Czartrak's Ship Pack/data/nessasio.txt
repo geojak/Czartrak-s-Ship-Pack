@@ -4,14 +4,14 @@ ship "Nesasio"
 		category "Medium Warship"
 		licenses
 			Navy
-		"cost" 6100000
+		"cost" 8200000
 		"shields" 9600
 		"hull" 2400
-		"required crew" 26
-		"bunks" 59
-		"mass" 346
+		"required crew" 41
+		"bunks" 57
+		"mass" 440
 		"drag" 5.2
-		"heat dissipation" .7
+		"heat dissipation" .4
 		"fuel capacity" 600
 		"cargo space" 55
 		"outfit space" 530

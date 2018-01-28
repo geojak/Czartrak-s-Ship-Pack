@@ -2,6 +2,7 @@ shipyard "Navy Advanced"
 	"Battleship"
 	"Navy Freighter"
 	"Battlecruiser"
+	"Viscount"
 	
 shipyard "Navy Basics"
 	"Destroyer"

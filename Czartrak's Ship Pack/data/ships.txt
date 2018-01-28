@@ -5,11 +5,11 @@ ship "Battleship"
 		licenses
 			Navy
 			Carrier
-		"cost" 15700000
+		"cost" 16700000
 		"shields" 23570
 		"hull" 9030
-		"required crew" 199
-		"bunks" 221
+		"required crew" 153
+		"bunks" 216
 		"mass" 1115
 		"drag" 19.4
 		"heat dissipation" .37
@@ -70,11 +70,11 @@ ship "Battlecruiser"
 		licenses
 			Navy
 			Cruiser
-		"cost" 14700000
+		"cost" 13700000
 		"shields" 20000
 		"hull" 7400
-		"required crew" 134
-		"bunks" 153
+		"required crew" 100
+		"bunks" 143
 		"mass" 720
 		"drag" 13.4
 		"heat dissipation" .31
@@ -246,19 +246,19 @@ ship "Navy Freighter"
 	sprite "ship/nfreighter"
 	attributes
 		category "Heavy Freighter"
-		"cost" 11400000
+		"cost" 13400000
 		"shields" 6230
 		"hull" 8200
 		"required crew" 12
 		"bunks" 20
 		"mass" 680
-		"drag" 15.8
+		"drag" 13.7
 		"heat dissipation" .5
 		"fuel capacity" 700
 		"cargo space" 750
-		"outfit space" 230
+		"outfit space" 270
 		"weapon capacity" 0
-		"engine capacity" 90
+		"engine capacity" 140
 		weapon
 			"blast radius" 120
 			"shield damage" 1200
@@ -269,10 +269,9 @@ ship "Navy Freighter"
 		"RT-I Radiothermal"
 		"LP144a Battery Pack"
 		"D23-QP Shield Generator"
-		"Water Coolant System"
 		
-		"X3700 Ion Thruster"
-		"X3200 Ion Steering"
+		"X4700 Ion Thruster"
+		"X4200 Ion Steering"
 		"Hyperdrive"
 		
 	engine -29 164
@@ -282,7 +281,7 @@ ship "Navy Freighter"
 	explode "large explosion" 35
 	explode "huge explosion" 20
 	"final explode" "final explosion large"
-	description "The Navy Freighter is a modified Cruiser, which has been made only to carry cargo. It has no weapons and carries no drones, so it relies completely on escorts for protection."
+	description "The Navy Freighter is a modified Cruiser, which has been made only to carry cargo for those times the Navy needs a fast transport for their equipment. It has no weapons and carries no drones, so it relies completely on escorts for protection. Recently the Navy also started to sell a few decommissioned ships of this type to the public, as they do not poses any design secrets that aren't universally known already."
 	
 ship "Pug Zambor"
 	sprite "ship/pug_zambor"
