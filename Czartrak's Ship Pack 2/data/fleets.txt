@@ -1,6 +1,6 @@
 fleet "Small Southern Pirates"
 	add variant 1
-		"Crow" 1
+		"Crow"
 		
 fleet "Large Southern Pirates"
 	add variant 1
@@ -37,15 +37,15 @@ fleet "Korath Home"
 	add variant 12
 		"Korath Seedship"
 	add variant 12
-		"Korath Seedship" 2
+		"Korath Seedship (Guns)" 2
 
 
 fleet "Kor Efret Home"
 	personality
 		timid
-	add variant
+	add variant 1
 		"Korath Seedship"
-	add variant
+	add variant 1
 		"Korath Seedship" 2
 
 
