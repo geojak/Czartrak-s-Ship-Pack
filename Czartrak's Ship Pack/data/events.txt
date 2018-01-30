@@ -22,6 +22,12 @@ event "navy using mark ii mod ships"
 		add variant 2
 			"Rainmaker (Mark II)" 2
 			"Battleship (Mark II)"
+		add variant 6
+			"Viscount (Mark II)"
+			"Lance" 2
+			"Frigate (Mark II)" 4
+			"Rainmaker (Mark II)" 3
+			"Gunboat (Mark II)" 3
 			
 mission "unlock mark ii mod ships"
 	landing

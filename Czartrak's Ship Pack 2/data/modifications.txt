@@ -11,12 +11,13 @@
 #Edit your own stuff in here:
 
 shipyard modships
-	"Battleship"
-	"Battlecruiser"
-	"Destroyer"
-	"Navy Freighter"
-	"Sentinel"
-	"Pug Zambor"
-	"Pug Mazdar"
-	"Pug Embor"
-	"Nesasio"
+	"Korath Seedship"
+	"Crow"
+	"Crow (Flamethrower)"
+	"Crow (Laser)"	
+	"Crow (Quad Blaster)"
+	"Crow (Heavy Rockets)"	
+	
+outfitter modoutfits
+	"Cryogenics Pod"
+	"AI Module"

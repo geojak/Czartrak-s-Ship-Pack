@@ -1,0 +1,106 @@
+ship "Korath Seedship"
+	sprite "ship/seedship"
+	attributes
+		category "Transport"
+		"cost" 6570000
+		"shields" 18000
+		"hull" 7200
+		"automaton" 1
+		"bunks" 105
+		"mass" 680
+		"drag" 11
+		"heat dissipation" .6
+		"ramscoop" 2.5
+		"outfit scan power" 20
+		"outfit scan speed" 1.5
+		"asteroid scan power" 40
+		"tactical scan power" 20
+		"atmosphere scan" 150
+		"fuel capacity" 600
+		"cargo space" 40
+		"outfit space" 480
+		"weapon capacity" 60
+		"engine capacity" 130
+		weapon
+			"blast radius" 250
+			"shield damage" 3600
+			"hull damage" 1800
+			"hit force" 5400
+	outfits
+		"Korath Warder" 2
+		
+		"Triple Plasma Core"
+		"Systems Core (Medium)"
+		"Large Heat Shunt" 2
+		"Small Heat Shunt"
+		
+		"Thruster (Planetary Class)"
+		"Steering (Planetary Class)"
+		"Hyperdrive"
+	
+	engine -20 130
+	engine 20 130
+	gun -7.5 -132.5 "Empty"
+	gun 8.5 -132.5 "Empty"
+	turret -16 25 "Korath Warder"
+	turret 16 25 "Korath Warder"
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "large explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "The Korath Seedship was originally built as a exploration vessel for their colonization programs. It is controlled mainly by AI, but has enough bunk space for a extra crew of five. The thing that makes this ship special are the integrated scanners, ramscoop systems, and a Cryogenics Bay that can hold up to 100 colonists in stasis."
+	description "Korathi colonization missions have slowed to a near halt, so nowadays the remaining Seedships are used as autonomous reconnaissance battalion."
+	description "The advanced integrated scanner package allows the scanning of planets, asteroids, and potential threats."
+	
+ship "Crow"
+	sprite "ship/Crow"
+	attributes
+		category "Light Warship"
+		"cost" 2730000
+		"shields" 5200
+		"hull" 1080
+		"required crew" 7
+		"bunks" 13
+		"mass" 250
+		"drag" 5.2
+		"heat dissipation" .5
+		"fuel capacity" 600
+		"cargo space" 35
+		"outfit space" 380
+		"weapon capacity" 130
+		"engine capacity" 130
+		weapon
+			"blast radius" 60
+			"shield damage" 600
+			"hull damage" 300
+			"hit force" 900
+	outfits
+		Hyperdrive
+		"Impala Plasma Thruster"
+		"Impala Plasma Steering"
+		"LP144a Battery Pack"
+		"Liquid Nitrogen Cooler"
+		"Meteor Missile Launcher" 2
+		"Modified Blaster Turret" 2
+		"D41-HY Shield Generator"
+		"Meteor Missile" 106
+		"Small Radar Jammer"
+		"NT-200 Nucleovoltaic"
+		"nGVF-AA Fuel Cell"
+		"Meteor Missile Box" 2
+	
+	engine 0 63	
+	engine -44 58 .7
+	engine 44 58 .7
+	gun 13 -59 "Meteor Missile Launcher"
+	gun -13 -59 "Meteor Missile Launcher"
+	turret -18 0 "Modified Blaster Turret"
+	turret 18 0 "Modified Blaster Turret"
+	explode "tiny explosion" 15
+	explode "small explosion" 34
+	explode "medium explosion" 18
+	explode "large explosion" 2
+	"final explode" "final explosion small"
+	description "The Crow is a modified Tarazed Blackbird. It was created by a rogue Tarazed engineer who was on the verge of being fired. Apparently he liked watching Samurai-Anime more than doing his job. This inspired him to turn the popular transporter into a lightning fast striking warship with two added gun ports at the front, reinforced hull plating and extra shield emitters all over the hull. To fit the extensive modifications most of the passenger bunks and cargo space were converted."

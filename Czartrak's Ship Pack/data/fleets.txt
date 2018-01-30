@@ -23,6 +23,12 @@ fleet "Large Republic"
 		"Battlecruiser"
 	add variant 4
 		"Destroyer" 2
+	variant 8
+		"Viscount"
+		"Lance" 2
+		"Frigate" 4
+		"Rainmaker" 6
+		"Gunboat" 4
 					
 fleet "Republic Freight"
 	government "Republic"

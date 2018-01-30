@@ -1,0 +1,58 @@
+ship "Crow" "Crow (Heavy Rockets)"
+	outfits
+		Hyperdrive
+		"NT-200 Nucleovoltaic"
+		Afterburner
+		"Impala Plasma Steering"
+		"Impala Plasma Thruster"
+		"Heavy Laser Turret" 2
+		"LP072a Battery Pack"
+		"Water Coolant System"
+		"Heavy Rocket Launcher" 2
+		"Heavy Rocket" 40
+		"Small Radar Jammer"
+		"D23-QP Shield Generator"
+
+ship "Crow" "Crow (Quad Blaster)"		
+	outfits
+		Hyperdrive
+		"Impala Plasma Thruster"
+		"Impala Plasma Steering"
+		"LP144a Battery Pack"
+		"Liquid Nitrogen Cooler"
+		"Fission Reactor"
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 106
+		"Large Radar Jammer"
+		"D41-HY Shield Generator"
+		"Quad Blaster Turret" 2
+		"Meteor Missile Box" 2
+		
+ship "Crow" "Crow (Flamethrower)"		
+	outfits
+		Hyperdrive
+		"A375 Atomic Steering"
+		"A370 Atomic Thruster"
+		"Fuel Pod" 3
+		"D41-HY Shield Generator"
+		"Fission Reactor"
+		"Modified Blaster Turret" 2
+		"Liquid Helium Cooler"
+		"LP144a Battery Pack"
+		Ramscoop
+		Flamethrower 2
+		"Small Radar Jammer"
+		
+ship "Crow" "Crow (Laser)"	
+	outfits
+		Hyperdrive
+		"Impala Plasma Thruster"
+		"X4200 Ion Steering"
+		"Heavy Laser Turret" 2
+		"LP072a Battery Pack"
+		"Heavy Laser" 2
+		"Cooling Ducts"
+		"LP036a Battery Pack"
+		"Water Coolant System"
+		"D23-QP Shield Generator"
+		"Fission Reactor"

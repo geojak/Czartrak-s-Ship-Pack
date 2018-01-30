@@ -1,0 +1,7 @@
+shipyard "Crow"
+	"Crow"
+	
+planet "Smuggler's Den"
+		shipyard "Crow"
+planet Haven
+		shipyard "Crow"

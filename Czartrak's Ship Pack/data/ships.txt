@@ -288,22 +288,22 @@ ship "Pug Zambor"
 	attributes
 		category "Fighter"
 		"cost" 1300000
-		"shields" 2500
-		"hull" 670
-		"required crew" 1
+		"shields" 900
+		"hull" 200
+		"required crew" 2
 		"bunks" 2
-		"mass" 180
-		"drag" 2.3
-		"heat dissipation" 1.1
+		"mass" 524
+		"drag" 7.6
+		"heat dissipation" 0.3
 		"fuel capacity" 0
 		"cargo space" 5
-		"outfit space" 180
-		"weapon capacity" 68
+		"outfit space" 126
+		"weapon capacity" 50
 		"engine capacity" 76
-		"energy generation" 10
-		"shield generation" 4
-		"shield energy" 4
-		"heat generation" 16
+		"energy generation" 9
+		"shield generation" 0.5
+		"shield energy" 1.5
+		"heat generation" 12
 		"energy capacity" 1000
 		weapon
 			"blast radius" 100
@@ -324,25 +324,25 @@ ship "Pug Zambor"
 	explode "medium explosion" 20
 	explode "large explosion" 10
 	"final explode" "final explosion small"
-	description "The Zambor is a fairly new Fighter design from the Pug. It is essentially a smaller, weaker Zibruka that can be carried on a parent ship."
+	description "The Zambor is a fairly new Fighter design from the Pug. It is essentially a clumsy, weaker Zibruka that can be carried on a parent ship. It is surprisingly heavy for its size."
 	
 ship "Pug Mazdar"
 	sprite "ship/pug_mazdar"
 	attributes
 		category "Medium Warship"
-		"cost" 6500000
+		"cost" 7700000
 		"shields" 6800
-		"hull" 1700
-		"required crew" 21
+		"hull" 1800
+		"required crew" 19
 		"bunks" 27
-		"mass" 410
-		"drag" 5.9
+		"mass" 480
+		"drag" 6
 		"heat dissipation" .7
 		"fuel capacity" 600
 		"cargo space" 40
-		"outfit space" 360
-		"weapon capacity" 184
-		"engine capacity" 106
+		"outfit space" 260
+		"weapon capacity" 116
+		"engine capacity" 124
 		"energy generation" 22
 		"shield generation" 8
 		"shield energy" 8
@@ -354,44 +354,47 @@ ship "Pug Mazdar"
 			"hull damage" 360
 			"hit force" 1080
 	outfits
-		"Pug Zapper Turret"
+		"Pug Seeker" 2
+		"Pug Anti-Missile"
 		"Pug Biodefenses" 6
 		"Jump Drive"
 		"Pug Cormet Thruster"
 		"Pug Cormet Steering"
 	engine -11 68
 	engine 11 68
+	gun -11 -85 "Pug Seeker"
+	gun 11 -85 "Pug Seeker"
 	fighter 0 -36 under
-	turret 0 7 "Pug Zapper Turret"
+	turret 0 7 "Pug Anti-Missile"
 	explode "tiny explosion" 5
 	explode "small explosion" 20
 	explode "medium explosion" 25
 	explode "large explosion" 15
 	"final explode" "final explosion medium"
-	description "This is a Pug Enfolta which has been modified to carry a fighter. However to achieve this, the Pug had to remove the ship's guns."
+	description "This is a Pug Enfolta which has been modified to carry a fighter. However to achieve this, the Pug had to remove the ship's zappers."
 	
 ship "Pug Embor"
 	sprite "ship/pug_embor"
 	attributes
 		category "Heavy Warship"
-		"cost" 11000000
-		"shields" 12600
-		"hull" 2700
-		"required crew" 61
-		"bunks" 87
-		"mass" 940
-		"drag" 9.8
-		"heat dissipation" .5
+		"cost" 10200000
+		"shields" 12300
+		"hull" 2500
+		"required crew" 54
+		"bunks" 81
+		"mass" 920
+		"drag" 9.6
+		"heat dissipation" .65
 		"fuel capacity" 600
-		"cargo space" 70
-		"outfit space" 560
-		"weapon capacity" 309
+		"cargo space" 50
+		"outfit space" 470
+		"weapon capacity" 216
 		"engine capacity" 148
-		"energy generation" 32
-		"shield generation" 10
-		"shield energy" 10
-		"heat generation" 48
-		"energy capacity" 4000
+		"energy generation" 31
+		"shield generation" 9
+		"shield energy" 9
+		"heat generation" 46
+		"energy capacity" 3800
 		weapon
 			"blast radius" 300
 			"shield damage" 1200
@@ -419,4 +422,4 @@ ship "Pug Embor"
 	explode "large explosion" 20
 	explode "huge explosion" 5
 	"final explode" "final explosion large"
-	description "This ship is a modifed Maboro. The Pug made this ship to carry two Zambor fighters."
+	description "This ship is a modified Maboro. The Pug made this ship to carry two Zambor fighters."
