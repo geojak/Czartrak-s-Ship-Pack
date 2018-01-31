@@ -1,0 +1,128 @@
+# Copyright (c) 2015 by Christian Rhodes
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+event "arachnid unlock event"
+	shipyard "Hai Advanced"
+		"Arachnid"
+		"Violin Spider"
+	fleet "Large Hai"
+		add variant 2
+			"Arachnid (Ion)"
+			"Violin Spider" 7
+			"Lightning Bug (Pulse)" 2
+		add variant 2
+			"Arachnid"
+			"Violin Spider (Pulse)" 7
+			"Lightning Bug" 2
+		add variant 3
+			"Arachnid (Ion)" 2
+			"Violin Spider" 14
+		add variant 1
+			"Arachnid"
+			"Violin Spider (Pulse)" 7
+			"Water Bug"
+			"Water Bug (Pulse)"
+			
+		
+mission "arachnid unlock mission"
+	landing
+	invisible
+	to offer
+		or
+			has "Wanderers Pond Strider Recon 1: done"
+			has "Wanderers Solifuge Recon 1: done"
+	on offer
+		event "arachnid unlock event" 30
+		fail
+
+ship "Arachnid"
+	sprite "ship/hai arachnid"
+	attributes
+		category "Medium Warship"
+		"cost" 12900000		 
+		"shields" 24700
+		"hull" 11400
+		"required crew" 151
+		"bunks" 238
+		"mass" 1110
+		"drag" 14
+		"heat dissipation" .4
+		"fuel capacity" 700
+		"cargo space" 150
+		"outfit space" 556
+		"weapon capacity" 250
+		"engine capacity" 130
+		weapon
+			"blast radius" 400
+			"shield damage" 3500
+			"hull damage" 1800
+			"hit force" 5000
+	outfits
+		Hyperdrive
+		"Hai Diamond Regenerator"
+		"Hai Williwaw Cooling" 2
+		"Quantum Keystone"
+		"Pulse Cannon" 2
+		"Pulse Turret" 2
+		"Hai Tracker" 224
+		"Hai Tracker Pod" 4
+		"Chameleon Anti-Missile"
+		"Boulder Reactor"
+		`"Bondir" Atomic Steering`
+		"Hai Ravine Batteries"
+		`"Bondir" Atomic Thruster`
+		
+	engine -44 125
+	engine 44 125
+	gun 20 -110 "Pulse Cannon"
+	gun -20 -110 "Pulse Cannon"
+	gun -89 -48 "Hai Tracker Pod"
+	gun 85 -48 "Hai Tracker Pod"
+	gun -49 -45 "Hai Tracker Pod"
+	gun 49 -45 "Hai Tracker Pod"
+	turret -40 32 "Pulse Turret"
+	turret 0 -40 "Chameleon Anti-Missile"
+	turret 40 32 "Pulse Turret"
+	fighter -37 -65
+	fighter 37 -65
+	fighter -46 40
+	fighter 46 40
+	fighter -72 -46
+	fighter 72 -46
+	fighter -101 57
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "big explosion" 40
+	explode "huge explosion" 15
+	description "The Arachnid is a Hai Carrier introduced to keep the Unfettereds' new Solifuge at bay. While it doesn't bring as much raw firepower as traditional Hai Heavy Warships, the high amount of fighters carried guarantees a maximum amount of distraction for weaker Hai convoys to escape."
+	
+ship "Arachnid" "Arachnid (Ion)" 
+	outfits
+		Hyperdrive
+		"Hai Diamond Regenerator"
+		"Hai Williwaw Cooling" 2
+		"Quantum Keystone"
+		"Ion Cannon" 4
+		"Bullfrog Anti-Missile"
+		"Boulder Reactor"
+		`"Bondir" Atomic Steering`
+		"Hai Ravine Batteries"
+		`"Bondir" Atomic Thruster`
+		
+	gun 20 -110 "Ion Cannon"
+	gun -20 -110 "Ion Cannon"
+	gun -89 -48 
+	gun 85 -48 
+	gun -49 -45 "Ion Cannon"
+	gun 49 -45 "Ion Cannon"
+	turret -40 32 "Bullfrog Anti-Missile"
+	turret 0 -40
+	turret 40 32 "Bullfrog Anti-Missile"
