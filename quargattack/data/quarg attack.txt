@@ -1,0 +1,115 @@
+# Copyright (c) 2016 by isaacssv558 and msmestad
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+event "Quarg Attack"
+	system Quaru
+		add fleet "Quarg Heavy Patrol" 6000
+	system Ekuarik
+		add fleet "Quarg Heavy Patrol" 10000
+	system "Ki War Ek"
+		add fleet "Quarg Heavy Patrol" 9000
+
+mission "Begin Quarg Attack"
+	landing
+	invisible
+	to offer
+		not "event: Quarg Attack"
+		"coalition jobs" >= 40
+	on offer
+		event "Quarg Attack"
+
+ship "Quarg Elderdragon"
+	sprite "ship/elderdragonsmall"
+	attributes
+		category "Heavy Warship"
+		"cost" 75000000
+		"shields" 150000
+		"hull" 90000
+		"required crew" 193
+		"bunks" 207
+		"mass" 1900
+		"drag" 21.5
+		"heat dissipation" .4
+		"fuel capacity" 1000
+		"cargo space" 235
+		"outfit space" 1074
+		"weapon capacity" 570
+		"engine capacity" 146
+		"self destruct" 1
+		"energy generation" 90
+		weapon
+            "blast radius" 250
+            "shield damage" 1200
+            "hull damage" 700
+            "hit force" 1600
+	outfits
+		"Quarg Skylance" 8
+		"Quarg Anti-Missile" 2
+		"Antimatter Core" 
+		"Nanotech Battery" 
+		"Quantum Shield Generator" 2
+		"Intrusion Countermeasures" 160
+		"Medium Graviton Thruster" 
+		"Medium Graviton Steering" 
+		"Jump Drive"
+	engine 30 155
+	engine -30 155
+	engine 40 175
+	engine -40 175
+	#Bow Turrets
+	turret 40 0 "Quarg Skylance"
+	turret -40 0 "Quarg Skylance"
+	#Main Turrets
+	#Rear
+	turret 20 31 "Quarg Skylance"
+	turret -20 31 "Quarg Skylance"
+	#Mid
+	turret 15 0 "Quarg Skylance"
+	turret -15 0 "Quarg Skylance"
+	#Front
+	turret 15 -20 "Quarg Anti-Missile"
+	turret -15 -20 "Quarg Anti-Missile"
+	#Heavy (Rear) Turrets
+	turret 62 65 "Quarg Skylance"
+	turret -62 65 "Quarg Skylance"
+	explode "tiny explosion" 12
+	explode "small explosion" 16
+	explode "medium explosion" 30
+	explode "big explosion" 40
+	explode "huge explosion" 20
+	description "The Elderdragon is used by the Quarg as a heavy destroyer. It is rarely deployed as the Quarg’s smaller vessels are normally more than sufficient to resolve any conflict."
+	
+fleet "Quarg Heavy Patrol"
+	government "Quarg"
+	names "quarg"
+	cargo 1
+	personality
+		forbearing heroic
+	variant 2
+		"Quarg Elderdragon"
+		"Quarg Skylark" 2
+	variant 4
+		"Quarg Elderdragon" 2
+	variant 1
+		"Quarg Skylark" 2
+		"Quarg Wardragon"
+	variant 1
+		"Quarg Wardragon" 2
+		"Quarg Skylark"
+	variant
+		"Quarg Skylark" 2
+		"Quarg Wardragon" 2
+	variant 1
+		"Quarg Wardragon" 3
+		"Quarg Skylark"
+	variant 1
+		"Quarg Skylark" 3
+		"Quarg Wardragon"
+
