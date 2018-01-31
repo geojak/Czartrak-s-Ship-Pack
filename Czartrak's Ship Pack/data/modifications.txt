@@ -20,3 +20,4 @@ shipyard modships
 	"Pug Mazdar"
 	"Pug Embor"
 	"Nesasio"
+	"Viscount"

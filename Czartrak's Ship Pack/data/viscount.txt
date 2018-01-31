@@ -8,8 +8,8 @@ ship "Viscount"
 		"cost" 35000000
 		"shields" 32400
 		"hull" 11600
-		"required crew" 397
-		"bunks" 456
+		"required crew" 244
+		"bunks" 420
 		"mass" 2440
 		"drag" 51.6
 		"heat dissipation" .35

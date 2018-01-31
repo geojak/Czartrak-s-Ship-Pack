@@ -49,8 +49,8 @@ ship "Arachnid"
 		"cost" 12900000		 
 		"shields" 24700
 		"hull" 11400
-		"required crew" 151
-		"bunks" 238
+		"required crew" 57
+		"bunks" 122
 		"mass" 1110
 		"drag" 14
 		"heat dissipation" .4
