@@ -77,20 +77,34 @@ fleet "Small Pug"
 		"Pug Zibruka"
 
 fleet "Large Pug"
+	add variant 1
+		"Pug Mazdar"
+		"Pug Zambor" 1
+		"Pug Zibruka" 2
+	add variant 1
+		"Pug Mazdar" 2
+		"Pug Zambor" 2	
 	add variant 2
 		"Pug Embor"
 		"Pug Zambor" 2
-	add variant 1
+		"Pug Zibruka" 2	
+	add variant 2
+		"Pug Embor"
+		"Pug Mazdar" 2
+		"Pug Zambor" 4
+	add variant 2
 		"Pug Embor"
 		"Pug Mazdar"
 		"Pug Zambor" 3
+		"Pug Enfolta"
 	add variant 1
-		"Pug Embor" 1
-		"Pug Enfolta" 1
-		"Pug Mazdar" 2
-	add variant 2
-		"Pug Mazdar" 2
-		"Pug Zambor" 2
+		"Pug Maboro"
+		"Pug Zambor"
+		"Pug Mazdar"
+		"Pug Zibruka" 2
+	
+	
+	
 
 
 

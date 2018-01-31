@@ -297,14 +297,16 @@ ship "Pug Zambor"
 		"heat dissipation" 0.3
 		"fuel capacity" 0
 		"cargo space" 5
-		"outfit space" 126
+		"outfit space" 93
 		"weapon capacity" 50
-		"engine capacity" 76
-		"energy generation" 9
+		"engine capacity" 43
+		"energy generation" 6
 		"shield generation" 0.5
 		"shield energy" 1.5
-		"heat generation" 12
+		"heat generation" 10
 		"energy capacity" 1000
+		"turn" 700
+		"turning heat" 3.5
 		weapon
 			"blast radius" 100
 			"shield damage" 400
@@ -314,7 +316,6 @@ ship "Pug Zambor"
 		"Pug Zapper" 2
 		"Pug Biodefenses" 1
 		"Pug Akfar Thruster"
-		"Pug Akfar Steering"
 	engine -7 35
 	engine 7 35
 	gun -15 -42 "Pug Zapper"
@@ -324,7 +325,7 @@ ship "Pug Zambor"
 	explode "medium explosion" 20
 	explode "large explosion" 10
 	"final explode" "final explosion small"
-	description "The Zambor is a fairly new Fighter design from the Pug. It is essentially a clumsy, weaker Zibruka that can be carried on a parent ship. It is surprisingly heavy for its size."
+	description "This is a Pug Fighter design. It is essentially a clumsy, weaker Zibruka that can be carried on a parent ship. It is surprisingly heavy for its size and you have no idea how it manages to turn."
 	
 ship "Pug Mazdar"
 	sprite "ship/pug_mazdar"

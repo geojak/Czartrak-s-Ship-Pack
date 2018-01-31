@@ -1,0 +1,86 @@
+mission "Fake ID"
+	name "A second Chance"
+	description "A shady guy, called Black offered to sell a clean vanilla ID to leave any criminal records behind in exchange for a Jump Drive."
+	source
+		government "Pirate"
+		attributes "north pirate"
+	destination Featherweight
+	on complete
+		outfit "Jump Drive" -1
+		outfit "Hyperdrive" 1
+		"reputation: Republic" = 2
+		"reputation: Syndicate" = 2
+		"reputation: Free Worlds" = 1
+		"reputation: Militia" = 0
+		"reputation: Merchant" = 10
+		"reputation: Navy (Oathkeeper)" = 100
+		"reputation: Neutral" = 1
+		"reputation: Pirates" = -10
+		dialog `Blacks' vassals quickly and carefully remove your jump drive and replace it with an ordinary hyperdrive. You sincerely hope that you are not making a mistake by giving him this technology. "One more thing," Black says as he hands you your new Identification Card, "don't expect any alien beings to be fooled by your new shiny name. It was a pleasure making business with you."`
+	to offer
+		random > 35
+		has "main plot completed"
+		or
+			"reputation: Republic" < -210
+			"reputation: Syndicate" < -210
+			"reputation: Free Worlds" < -210
+	on offer
+		log "A shady guy, called Black offered to sell a clean ID in exchange for a Jump Drive. Can I really leave my past behind so easily?"	
+		conversation
+			`You sit in a smoky pirate bar. It is not very crowded today, but one guy on the other side of the room keeps looking at you. After about ten minutes of starring, he slowly walks towards you and says, "So, you must be <last>, the legendary war hero and outlaw. I have an interesting offer for you."`
+			choice
+				`	"Who do I have the pleasure of talking to?"`
+					goto "who"
+				`	"What sort of offer?"`
+					goto "offer"
+				`	"I don't do business with people like you."`
+					goto "decline"
+			label "who"
+			`	"You can call me Black. I am an independent traveller and despite the place we are meeting, I am actually not into illegal stuff, but it happens that what I am looking for can not be acquired anywhere without drawing the attention of military."`
+			`	After a brief moment he continues, "During the Pug invasion a few Alien wreckages were salvaged, since you were actively participating in the battle, does it happen, that you have gotten hands onto a Jump Drive?"`
+			choice
+				`	"Let's say I do own a Jump Drive. What do you offer in return?"`
+					goto "offer2"
+				`	"Sorry Black, you got the wrong guy."`
+					goto "decline"
+			label "offer2"
+			`	"It seems to me, that you have gotten into trouble with the law enforcement recently, I offer you a second chance. A clean name, surely illegal but untraceable."`
+			`	"So, do we have a deal"?`
+			choice
+				`	"Alright Black, I will get you a Jump Drive."`
+					goto "accept"
+				`	"I am not interested."`
+					goto "decline"
+			label offer
+			`	He must have anticipated this moment for a long time as blurbs out of him, "It seems to me, that you have gotten into trouble with the law enforcement, I offer you a second chance. A clean name, surely illegal but untraceable."`
+			`	After a brief moment he continues, "During the Pug invasion a few Alien wreckages salvaged, since you were actively participating in the battle, do you happen to have gotten hands onto a Jump Drive?"`
+			choice
+				`	"Fine, I'll hand you a Jump Drive over."`
+					goto "accept2"
+					"I am not interested."`
+					goto "decline"	
+			label "decline"
+			apply
+			`	"Too bad," says Black. "In that case, I will keep looking elsewhere..."`
+				decline
+			label "accept"
+			apply
+			`	Black seems exited. "I will get you papers ready, Captain," he says. "We meet at Featherweight. You can trust me that this is not a trap, since I would not risk the Jump Drive to be destroyed. See you soon, Captain."`
+				accept
+			label "accept2"
+			apply
+			`	He seems exited. "I will get you papers ready, Captain," he says. "We meet at Featherweight. You can trust me that this is not a trap, since I would not risk the Jump Drive to be destroyed. By the way, Captain, you can call me Black."`
+				accept
+	on complete
+		outfit "Jump Drive" -1
+		outfit "Hyperdrive" 1
+		"reputation: Republic" = 2
+		"reputation: Syndicate" = 2
+		"reputation: Free Worlds" = 1
+		"reputation: Militia" = 0
+		"reputation: Merchant" = 10
+		"reputation: Navy (Oathkeeper)" = 100
+		"reputation: Neutral" = 1
+		conversation
+			Blacks' vassals quickly and carefully remove your jump drive and replace it with an ordinary hyperdrive. You sincerely hope that you are not making a mistake by giving him this technology. "One more thing," Black says as he hands you your new Identification Card, "don't expect any alien beings to be fooled by your new shiny name. It was a pleasure making business with you."`
+		
