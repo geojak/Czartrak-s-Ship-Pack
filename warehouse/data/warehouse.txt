@@ -1,0 +1,244 @@
+shipyard "Arach"
+	"Warehouse"
+shipyard "Syndicate Advanced"
+	"Warehouse"
+shipyard "Hai Advanced"
+	"Warehouse"
+shipyard "Wanderer Advanced"
+	"Warehouse"
+shipyard "Remnant"
+	"Warehouse"
+
+ship "Warehouse"
+	sprite "ship/warehouse"
+	"never disabled"
+	attributes
+		category "Heavy Freighter"
+		"cost" 11000000
+		"shields" 1
+		"hull" 5000
+		"required crew" 0
+		"automaton" 1
+		"bunks" 0
+		"mass" 884000
+		"drag" 20
+		"heat dissipation" 0.1
+		"fuel capacity" 0
+		"cargo space" 1000
+		"outfit space" 10000
+		"weapon capacity" 5000
+		"engine capacity" 5000
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+	outfits
+		"nGVF-BB Fuel Cell"
+		"Supercapacitor"
+		"Cooling Ducts"
+		
+		"Chipmunk Plasma Thruster"
+		"Chipmunk Plasma Steering"
+
+	gun 60.5 -3
+	gun 57 0.5
+	gun 50.5 2
+	gun 44 7
+	gun 38.5 10
+	gun 35 13
+	gun 28.5 17
+	gun 24.5 18
+	gun 3.5 19.5
+	gun 20 7
+	gun 35 -4
+	gun 48 -9
+	gun 60 -15
+	gun 56.5 -20.5
+	gun 45.5 -19.5
+	gun 39.5 -14.5
+	gun 34 -11
+	gun 30 -6
+	gun 26.5 -2
+	gun 16 1
+	gun 14 7.5
+	gun 11.5 12.5
+	gun 7.5 16.5
+	gun -6 12.5
+	gun 0.5 7.5
+	gun 14.5 1
+	gun 21.5 -4
+	gun 32.5 -8.5
+	gun 39.5 -14
+	gun 46 -17
+	gun 53 -17
+	gun 60 -19
+	gun 52 -23
+	gun 39.5 -21
+	gun 34 -19.5
+	gun 26 -17
+	gun 18 -11.5
+	gun 10 -8
+	gun 5 0
+	gun -1 2
+	gun -7.5 8
+	gun -13 12
+	gun -20.5 3.5
+	gun -12 -2
+	gun -3.5 -8
+	gun 7 -14.5
+	gun 20.5 -21
+	gun 30.5 -25
+	gun 40.5 -25.5
+	gun 32.5 -31
+	gun 23 -29.5
+	gun 16 -28
+	gun 4 -26
+	gun -2.5 -22
+	gun -9 -19
+	gun -11 -13.5
+	gun -17 -9
+	gun -25.5 -4
+	gun -31 1
+	gun -43.5 -3.5
+	gun -34.5 -8.5
+	gun -25 -16
+	gun -19 -20.5
+	gun -7 -25
+	gun 3 -29.5
+	gun 11.5 -34
+	gun 20 -37.5
+	gun 10.5 -42.5
+	gun 4 -42.5
+	gun -2.5 -40
+	gun -9.5 -37
+	gun -18 -31
+	gun -22 -29
+	gun -27 -24
+	gun -32.5 -17.5
+	gun -40.5 -13.5
+	gun -46 -10
+	gun -51 -6
+	gun -61.5 -10.5
+	gun -53.5 -17.5
+	gun -42 -23
+	gun -36.5 -24.5
+	gun -27.5 -30
+	gun -19 -37.5
+	gun -11 -41
+	gun -2.5 -40.5
+	gun 5 -43.5
+	gun 0 -50
+	gun -8.5 -47.5
+	gun -14 -47
+	gun -24 -43.5
+	gun -33.5 -40
+	gun -41 -35
+	gun -47 -32.5
+	gun -53.5 -29.5
+	gun -58.5 -23.5
+	gun -64 -19.5
+	gun -69 -15
+	gun -49.5 -39
+	gun -35.5 -45.5
+	turret 60.5 -3
+	turret 57 0.5
+	turret 50.5 2
+	turret 44 7
+	turret 38.5 10
+	turret 35 13
+	turret 28.5 17
+	turret 24.5 18
+	turret 3.5 19.5
+	turret 20 7
+	turret 35 -4
+	turret 48 -9
+	turret 60 -15
+	turret 56.5 -20.5
+	turret 45.5 -19.5
+	turret 39.5 -14.5
+	turret 34 -11
+	turret 30 -6
+	turret 26.5 -2
+	turret 16 1
+	turret 14 7.5
+	turret 11.5 12.5
+	turret 7.5 16.5
+	turret -6 12.5
+	turret 0.5 7.5
+	turret 14.5 1
+	turret 21.5 -4
+	turret 32.5 -8.5
+	turret 39.5 -14
+	turret 46 -17
+	turret 53 -17
+	turret 60 -19
+	turret 52 -23
+	turret 39.5 -21
+	turret 34 -19.5
+	turret 26 -17
+	turret 18 -11.5
+	turret 10 -8
+	turret 5 0
+	turret -1 2
+	turret -7.5 8
+	turret -13 12
+	turret -20.5 3.5
+	turret -12 -2
+	turret -3.5 -8
+	turret 7 -14.5
+	turret 20.5 -21
+	turret 30.5 -25
+	turret 40.5 -25.5
+	turret 32.5 -31
+	turret 23 -29.5
+	turret 16 -28
+	turret 4 -26
+	turret -2.5 -22
+	turret -9 -19
+	turret -11 -13.5
+	turret -17 -9
+	turret -25.5 -4
+	turret -31 1
+	turret -43.5 -3.5
+	turret -34.5 -8.5
+	turret -25 -16
+	turret -19 -20.5
+	turret -7 -25
+	turret 3 -29.5
+	turret 11.5 -34
+	turret 20 -37.5
+	turret 10.5 -42.5
+	turret 4 -42.5
+	turret -2.5 -40
+	turret -9.5 -37
+	turret -18 -31
+	turret -22 -29
+	turret -27 -24
+	turret -32.5 -17.5
+	turret -40.5 -13.5
+	turret -46 -10
+	turret -51 -6
+	turret -61.5 -10.5
+	turret -53.5 -17.5
+	turret -42 -23
+	turret -36.5 -24.5
+	turret -27.5 -30
+	turret -19 -37.5
+	turret -11 -41
+	turret -2.5 -40.5
+	turret 5 -43.5
+	turret 0 -50
+	turret -8.5 -47.5
+	turret -14 -47
+	turret -24 -43.5
+	turret -33.5 -40
+	turret -41 -35
+	turret -47 -32.5
+	turret -53.5 -29.5
+	turret -58.5 -23.5
+	turret -64 -19.5
+	turret -69 -15
+	turret -49.5 -39
+	turret -35.5 -45.5
+	description "A Planet Based Warehouse, should be unmovable, used for storing outfits. DO NOT FORGET TO PARK IT."
