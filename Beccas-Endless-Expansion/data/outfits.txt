@@ -1,0 +1,78 @@
+outfit "Hai Squall Cooling"
+	category "Systems"
+	cost 93500
+	thumbnail "outfit/liquid nitrogen hai"
+	"mass" 25
+	"outfit space" -25
+	"cooling" 41
+	description "With the escalation of their war against the Wanderers, the Unfettered understood that the Sunbeams were causing them problems partly due to the heat their ships were subject to. The Squall cooling system was their answer, larger than their previus coolings but also much more efficent."
+
+outfit "Hai Zephyr Cooling"
+	category "Systems"
+	cost 38000
+	thumbnail "outfit/water cooling hai"
+	"mass" 14
+	"outfit space" -14
+	"cooling" 21
+	description "After the introduction of the Ionic Blaster and the consequential need of more raw energy generation to power them, the Williwaw cooling wasn't enough anymore. This resulted in the developed of more potent cooling outfits to avoid overheating when using many Ionic Blasters at once."
+
+outfit `"Babreii" Afterburner`
+	category "Engines"
+	"cost" 130000
+	thumbnail "outfit/afterburner hai"
+	"mass" 10
+	"outfit space" -10
+	"engine capacity" -10
+	"afterburner thrust" 16.0
+	"afterburner fuel" .28
+	"afterburner heat" 7.2
+	"afterburner effect" "afterburner"
+	description "Considered nothing more than a relic from the past among most Hai, the Babreii afterburner is one of their most ancient designs. Nowadays only a small part of the Hai still use these. Compared to human Afterburners the Hai design is smaler and slightly more fuel efficient, while producing more heat and marginally less thrust per outfit space."
+
+outfit "Ionic Rifle"
+	category "Hand to Hand"
+	cost 19000
+	thumbnail "outfit/hai ionic rifle"
+	"capture attack" 1.2
+	"capture defense" 0.9
+	"unplunderable" 1
+	description "After the end of the Korath raids, most of the Hai stopped designing new weapons, included those intended to harm other Hai. The Unfettered instead projected this new rifle, with the capacity of shooting ionized shots in fast succession with a higher charge than the ones fired by the older Pulse Rifle."
+
+outfit "Protection Station"
+	category "Hand to Hand"
+	cost 26000
+	thumbnail "outfit/hai protection station"
+	"mass" 1
+	"outfit space" -1
+	"capture defense" 2.0
+	"unplunderable" 1
+	description "This special barrier was first built just after the Raiders started attacking the Hai, but they never became popular because back then it was just a way to slow down the enemy boarders. Later on a Pulse Rifle was added to the base model making it much more useful, but they never gained success since the outfit space they take, even if it's not much, prevents a pilot from installing a large number on a ship without removing some components."
+
+outfit "Heavy Laser Rifle"
+	category "Hand to Hand"
+	cost 14500
+	thumbnail "outfit/heavy laser rifle"
+	"capture attack" 0.8
+	"capture defense" 1.4
+	"unplunderable" 1
+	description "The Heavy Laser Rifle is a recent invention of Kraz Cybernetics, an upgrade from the outdated weapon so common on many ships. While it is substantially better in than its base model, the cost is also much higher due to the materials used in its construction."
+
+outfit "Professional Security Station"
+	category "Hand to Hand"
+	cost 65000
+	thumbnail "outfit/professional security station"
+	"mass" 3
+	"outfit space" -3
+	"capture defense" 6.3
+	"unplunderable" 1
+	description "This defensive barrier is based on the original Security Station, but is much more recent. It has two blast doors in case the boarders can blow up one and features a turret connected to a computer placed on the other side of the barricade, where a crew member can safely control it."
+
+outfit "RT-II Radiothermal"
+	category "Power"
+	cost 425000
+	thumbnail "outfit/modified radiothermal"
+	"mass" 63
+	"outfit space" -63
+	"energy generation" 6.1
+	"heat generation" 27
+	description "A few hundreds of years ago, the northern anarchists didn't have access to any heavy generator except the RTI-I model, but with the increase of the ship systems power need they were starting to suffer of low energy more and more often. Their situation got better when one of the few manufacturers on their worlds developed a larger and more space efficent version, but they soon found out it creates more heat than the previus model."

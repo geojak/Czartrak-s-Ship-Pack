@@ -1,0 +1,69 @@
+outfitter "Kraz Basics"
+	"Accurate Gatling Blaster"
+	"Gatling Gun Ammo"
+	"Bullet Boxes"
+
+outfitter "Northern Pirate Outfits"
+	"RT-II Radiothermal"
+	"RT-I Radiothermal"
+	"Modified Blaster"
+	"Modified Blaster Turret"
+	"Plasma Cannon"
+	"Laser Rifle"
+	"Fragmentation Grenades"
+	"Nerve Gas"
+	"Scram Drive"
+	"Local Map"
+	"Interference Plating"
+	"Brig"
+
+planet Haven
+	outfitter "Basic Outfits"
+	outfitter "Ammo North"
+	outfitter "Ammo South"
+	outfitter "Northern Pirate Outfits"
+
+outfitter "Hai Unfettered"
+	"Pulse Cannon"
+	"Hai Tracker"
+	"Bullfrog Anti-Missile"
+	"Geode Reactor"
+	"Hai Williwaw Cooling"
+	"Hyperdrive"
+	"Hai Chasm Batteries"
+	"Hai Fissure Batteries"
+	"Supercapacitor"
+	"Cargo Expansion"
+	"Small Bunk Room"
+	"Fuel Pod"
+	"Hai Corundum Regenerator"
+	`"Basrem" Atomic Thruster`
+	`"Basrem" Atomic Steering`
+	`"Babreii" Afterburner`
+	"Local Map"
+	"Quantum Keystone"
+	"Pulse Rifle"
+	"Ionic Blaster"
+	"Ionic Turret"
+	"Hai Zephyr Cooling"
+	"Ionic Rifle"
+	"Protection Station"
+
+shipyard "Hai Unfettered"
+	"Sea Scorpion"	
+	
+planet Darkcloak
+	outfitter "Hai Unfettered"
+	shipyard "Hai Unfettered"
+	
+outfitter "Hai Intermediate"
+	`"Babreii" Afterburner`
+	"Protection Station"
+
+outfitter "Hai Advanced"
+	`"Babreii" Afterburner`
+	"Protection Station"
+
+shipyard "Remnant"
+	"Swan"
+
