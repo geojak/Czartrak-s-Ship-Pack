@@ -1,24 +1,38 @@
 ship "Korath Seedship" "Korath Seedship (Jump)"
 	outfits
 		"Korath Warder" 2
-		"Triple Plasma Core"
-		"Systems Core (Medium)"
-		"Large Heat Shunt" 2
-		"Small Heat Shunt"
-		"Thruster (Planetary Class)"
-		"Steering (Planetary Class)"
+		"Double Plasma Core"
+		"Systems Core (Small)"
+		"Small Heat Shunt" 3
+		"Thruster (Comet Class)"
+		"Steering (Comet Class)"
+		"Thruster (Lunar Class)"
+		"Steering (Lunar Class)"
 		"Jump Drive"
 		
 ship "Korath Seedship" "Korath Seedship (Guns)"
 	outfits
 		"Korath Fire-Lance" 2
-		"Triple Plasma Core"
-		"Systems Core (Medium)"
-		"Large Heat Shunt" 2
-		"Small Heat Shunt"
-		"Thruster (Planetary Class)"
-		"Steering (Planetary Class)"
+		"Double Plasma Core"
+		"Systems Core (Small)"
+		"Small Heat Shunt" 3
+		"Thruster (Comet Class)"
+		"Steering (Comet Class)"
+		"Thruster (Lunar Class)"
+		"Steering (Lunar Class)"
 		"Hyperdrive"
+		
+ship "Korath Seedship" "Korath Seedship (Jump, Guns)"
+	outfits
+		"Korath Fire-Lance" 2
+		"Double Plasma Core"
+		"Systems Core (Small)"
+		"Small Heat Shunt" 3
+		"Thruster (Comet Class)"
+		"Steering (Comet Class)"
+		"Thruster (Lunar Class)"
+		"Steering (Lunar Class)"
+		"Jump Drive"
 
 ship "Crow" "Crow (Heavy Rockets)"
 	outfits
@@ -78,3 +92,33 @@ ship "Crow" "Crow (Laser)"
 		"Water Coolant System"
 		"D23-QP Shield Generator"
 		"Fission Reactor"
+
+ship "Modified Osprey " "Modified Osprey (Javelin)"
+	outfits
+		"Javelin Pod" 11
+		"Heavy Anti-Missile Turret" 2
+		"RT-II Radiothermal"
+		"LP144a Battery Pack"
+		"LP072a Battery Pack"
+		"D94-YV Shield Generator"
+		"Laser Rifle" 14
+		"Javelin" 3000
+		"Javelin Storage Crate" 8
+		"Impala Plasma Thruster"
+		"Orca Plasma Steering"
+		"Hyperdrive"
+		
+ship "Modified Osprey " "Modified Osprey (Sidewinder)"
+	outfits
+		"Sidewinder Missile Launcher" 11
+		"Sidewinder Missile Rack" 10
+		"Sidewinder Missile" 725
+		"Anti-Missile Turret" 2
+		"LP072a Battery Pack"
+		"LP144a Battery Pack"
+		"RT-II Radiothermal"
+		"D41-HY Shield Generator"
+		"Laser Rifle" 14
+		"A520 Atomic Thruster"
+		"A525 Atomic Steering"
+		"Hyperdrive"

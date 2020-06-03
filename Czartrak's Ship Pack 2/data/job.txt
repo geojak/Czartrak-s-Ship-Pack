@@ -1,0 +1,28 @@
+mission "Remnant: Bounty large"
+	job
+	repeat
+	name "Remnant bounty large"
+	description "Hunt down some Korath ships that are lurking in Remnant territory, then return to <planet> to receive your payment of <payment>."
+	source
+		government "Remnant"
+	to offer
+		has "Remnant: Defense 3: done"
+		random < 20
+	npc kill
+		government "Korath"
+		personality coward target uninterested marked waiting
+		system
+			distance 1 2
+		fleet
+			names "korath"
+			cargo 3
+			variant
+				"Korath World-Ship B (Crippled)"
+				"Korath Seedship (Guns)" 2
+		dialog "You have destroyed the Korath ships. You can now return to <planet> to collect your payment."
+	on visit
+		dialog phrase "generic bounty hunting on visit"
+	on complete
+		payment 300000
+		"reputation: Remnant" += 1
+		dialog "A Remnant military leader thanks you for hunting them down, and gives you the agreed-upon payment of <payment>."

@@ -3,6 +3,8 @@ shipyard "Navy Advanced"
 	"Navy Freighter"
 	"Battlecruiser"
 	"Viscount"
+	"Viscount (Mark III)"
+	"Viscount (Mark II)"
 	
 shipyard "Navy Basics"
 	"Destroyer"

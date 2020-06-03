@@ -5,106 +5,127 @@ fleet "Navy Surveillance"
 	add variant 1
 		"Nesasio" 2
 		"Surveillance Drone" 4
+
+fleet "Small Republic"
+	add variant 1
+		"Destroyer" 
+	add variant 1
+		"Nesasio" 
+		"Combat Drone" 2
 		
 fleet "Large Republic"
 	add variant 1
 		"Battleship"
-		"Destroyer" 2
-	add variant 2
+		"Destroyer"
+	add variant 1
 		"Battlecruiser"
 		"Nesasio" 1
 		"Combat Drone" 2
-	add variant 4
+	add variant 1
 		"Battleship"
-	add variant 5
+	add variant 1
 		"Nesasio" 2
 		"Combat Drone" 4
-	add variant 5
+	add variant 1
 		"Battlecruiser"
-	add variant 4
-		"Destroyer" 2
-	variant 8
+	add variant 1
+		"Destroyer"
+		"Frigate"
+	add variant 1
 		"Viscount"
-		"Lance" 2
-		"Frigate" 4
-		"Rainmaker" 6
-		"Gunboat" 4
-					
+		"Dagger" 2
+		"Rainmaker" 2
+		"Gunboat" 2
+
+system Alnitak
+		add fleet "Republic Freight" 9000
+system Saiph
+		add fleet "Republic Freight" 9000
+system Rigel
+		add fleet "Republic Freight" 9000
+system Betelgeuse
+		add fleet "Republic Freight" 9000
+system Alheka
+		add fleet "Republic Freight" 9000
+system Canopus
+		add fleet "Republic Freight" 9000
+system Phact
+		add fleet "Republic Freight" 9000
+system Mirzam
+		add fleet "Republic Freight" 9000
+system Mebsuta
+		add fleet "Republic Freight" 9000
+system Phurad
+		add fleet "Republic Freight" 9000
+system Wazn
+		add fleet "Republic Freight" 9000
+
 fleet "Republic Freight"
 	government "Republic"
-	names "republic capital"
+	names "republic small"
+	cargo 4
+	confusion 40
+		timid frugal appeasing
+	variant 3
+		"Gunboat"
+		"Navy Frieghter" 2
+	variant 1
+		"Cruiser"
+		"Combat Drone" 4
+		"Navy Freighter" 3
+	variant 2
+		"Navy Freighter" 2
+		"Rainmaker" 2
+	variant 3
+		"Frigate"
+		"Navy Freighter" 2
+		
+fleet "Oathkeeper Freight"
+	government "Navy (Oathkeeper)"
+	names "republic small"
 	cargo 4
 	personality
 		confusion 20
 		timid frugal appeasing
 	variant 3
-		"Frigate" 2
-		"Rainmaker" 2
+		"Gunboat"
 		"Navy Frieghter"
 	variant 1
 		"Cruiser"
 		"Combat Drone" 4
-		"Frigate"
-		"Rainmaker"
 		"Navy Freighter" 3
-	variant 3
-		"Gunboat" 2
+	variant 2
 		"Navy Freighter"
-	variant 2
-		"Navy Freighter" 2
-		"Gunboat" 2
-		"Rainmaker"
-	variant 2
-		"Nesasio" 1
-		"Combat Drone" 2
-		"Frigate" 2
-		"Navy Freighter" 2
-	variant 1
-		"Nesasio" 2
-		"Combat Drone" 4
-		"Navy Freighter" 1
+		"Rainmaker" 2
 	variant 3
-		"Destroyer" 2
+		"Frigate"
+		"Navy Freighter" 2	
+	
+	variant 1
+		"Cruiser (Mark II)"
+		"Combat Drone" 4
+		"Navy Freighter" 3	
+	variant 3
+		"Gunboat (Mark II)"
+		"Navy Frieghter" 
+	variant 2
+		"Navy Freighter"
+		"Rainmaker (Mark II)" 2
+	variant 3
+		"Frigate (Mark II)"
 		"Navy Freighter" 2
-			
-fleet "Small Pug"
+
+fleet "Large Pug (Wanderer)"
 	add variant 2
-		"Pug Mazdar"
-		"Pug Zambor"
+		"Pug Yubera"
+		"Pug Enfolta" 2
+		"Pug Zambor" 6
+	add variant 2
+		"Pug Yubera"
+		"Pug Zibruka" 2
+		"Pug Zambor" 6
 	add variant 1
-		"Pug Mazdar" 
-		"Pug Zambor" 
+		"Pug Yubera"
 		"Pug Zibruka"
-
-fleet "Large Pug"
-	add variant 1
-		"Pug Mazdar"
-		"Pug Zambor" 1
-		"Pug Zibruka" 2
-	add variant 1
-		"Pug Mazdar" 2
-		"Pug Zambor" 2	
-	add variant 2
-		"Pug Embor"
-		"Pug Zambor" 2
-		"Pug Zibruka" 2	
-	add variant 2
-		"Pug Embor"
-		"Pug Mazdar" 2
-		"Pug Zambor" 4
-	add variant 2
-		"Pug Embor"
-		"Pug Mazdar"
-		"Pug Zambor" 3
 		"Pug Enfolta"
-	add variant 1
-		"Pug Maboro"
-		"Pug Zambor"
-		"Pug Mazdar"
-		"Pug Zibruka" 2
-	
-	
-	
-
-
-
+		"Pug Zambor" 6

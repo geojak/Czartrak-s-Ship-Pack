@@ -1,0 +1,96 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#
+# This plugin lets player easily choose colour for own ships. Colours:
+# 0 - Orange (Republic, Pug)
+# 1 - Pink (Alpha?)
+# 2 - Light Green (Free Worlds)
+# 3 - Neon Green (unused?)
+# 4 - Violet (Syndicate)
+# 5 - Light Blue (Merchant, Coalition)
+# 6 - Red (Pirate)
+# By default, vanilla's swizzle 5 (light blue) is used.
+
+government "Escort"
+	swizzle 1
+
+mission "republic swizzle"
+	landing
+	invisible
+	to offer
+		has "Wanderers: Sestor: Scattered Remnant: done"
+	on offer
+		set "license: Navy Carrier"
+		set "license: Navy Cruiser"
+		set "license: Navy"
+		event "joined the Wanderer"
+		fail
+		
+event "joined the Navy"
+	government "Escort"
+		swizzle 0
+
+mission "wanderer swizzle"
+	landing
+	invisible
+	to offer
+		has "event: wanderers: the eye opens"
+	on offer
+		event "joined the Wanderer"
+		fail
+		
+event "joined the Wanderer"
+	government "Escort"
+		swizzle 3	
+
+mission "syndicate swizzle - reconciliation"
+	landing
+	invisible
+	to offer
+		has "FW Syndicate Extremists 1A: done"
+	on offer
+		event "joined the Syndicate"
+		event "syndicate tech available"
+		event "fwc solace has nukes"
+		fail
+		
+mission "syndicate swizzle - checkmate"
+	landing
+	invisible
+	to offer
+		or
+			has "FWC End: done"
+	on offer
+		outfit "Cloaking Device" 1
+		event "joined the Syndicate"
+		fail
+		
+event "joined the Syndicate"
+	government "Escort"
+		swizzle 4
+
+#see Fake ID Plugin
+#event "joined the civilians"
+#	government "Escort"
+#		swizzle 5	
+
+mission "pirate swizzle"
+	landing
+	invisible
+	to offer
+		    "reputation: Merchant" < -210
+	on offer
+		event "joined the pirates"
+		fail
+		
+event "joined the pirates"
+	government "Escort"
+		swizzle 6		
+

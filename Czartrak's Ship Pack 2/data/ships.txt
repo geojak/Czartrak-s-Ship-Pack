@@ -2,13 +2,14 @@ ship "Korath Seedship"
 	sprite "ship/seedship"
 	attributes
 		category "Transport"
-		"cost" 6570000
-		"shields" 18000
-		"hull" 7200
+		"cost" 10570000
+		"shields" 16400
+		"hull" 5200
 		"automaton" 1
+		"self destruct" .24
 		"bunks" 105
 		"mass" 680
-		"drag" 11
+		"drag" 9.5
 		"heat dissipation" .6
 		"ramscoop" 2.5
 		"outfit scan power" 20
@@ -18,9 +19,9 @@ ship "Korath Seedship"
 		"atmosphere scan" 150
 		"fuel capacity" 600
 		"cargo space" 40
-		"outfit space" 480
+		"outfit space" 360
 		"weapon capacity" 60
-		"engine capacity" 130
+		"engine capacity" 120
 		weapon
 			"blast radius" 250
 			"shield damage" 3600
@@ -28,14 +29,13 @@ ship "Korath Seedship"
 			"hit force" 5400
 	outfits
 		"Korath Warder" 2
-		
-		"Triple Plasma Core"
-		"Systems Core (Medium)"
-		"Large Heat Shunt" 2
-		"Small Heat Shunt"
-		
-		"Thruster (Planetary Class)"
-		"Steering (Planetary Class)"
+		"Double Plasma Core"
+		"Systems Core (Small)"
+		"Small Heat Shunt" 3
+		"Thruster (Comet Class)"
+		"Steering (Comet Class)"
+		"Thruster (Lunar Class)"
+		"Steering (Lunar Class)"
 		"Hyperdrive"
 	
 	engine -20 130
@@ -53,7 +53,75 @@ ship "Korath Seedship"
 	description "The Korath Seedship was originally built as a exploration vessel for their colonization programs. It is controlled mainly by AI, but has enough bunk space for a extra crew of five. The thing that makes this ship special are the integrated scanners, ramscoop systems, and a Cryogenics Bay that can hold up to 100 colonists in stasis."
 	description "Korathi colonization missions have slowed to a near halt, so nowadays the remaining Seedships are used as autonomous reconnaissance battalion."
 	description "The advanced integrated scanner package allows the scanning of planets, asteroids, and potential threats."
+
+ship "Modified Osprey "
+	sprite "ship/mosprey"
+	"never disabled"
+	swizzle 3
+	attributes
+		category "Heavy Warship"
+		"cost" 11900000
+		"shields" 12200
+		"hull" 2900
+		"required crew" 32
+		"bunks" 55
+		"mass" 400
+		"drag" 5.9
+		"heat dissipation" .7
+		"fuel capacity" 500
+		"cargo space" 40
+		"outfit space" 575
+		"weapon capacity" 220
+		"engine capacity" 160
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+	outfits
+		"Modified Blaster" 11
+		"Modified Blaster Turret" 5
+		"Stack Core"
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		"Liquid Helium Cooler"
+		"Laser Rifle" 14
+		"Impala Plasma Thruster"
+		"Orca Plasma Steering"
+		"Hyperdrive"
+		"Large Radar Jammer"
+		
+	engine -46 67
+	engine 46 67
+	engine -17 105.5 .0
+	engine 17 105.5 .0
+	gun 0 -108
+	gun -9 -99 
+	gun 9 -99 
+	gun -9 -99 
+	gun 9 -99 
+	gun -21 -61 
+	gun 21 -61 
+	gun -26.5 -53 
+	gun 26.5 -53 
+	gun -60 17 
+	gun 60 17
+	turret 0 -91 
+	turret -19.5 -16 
+	turret 19.5 -16 
+	turret 0 29 
+	turret 0 89.5 
 	
+	explode "medium explosion" 24
+	explode "large explosion" 16
+	explode "small explosion" 40
+	explode "tiny explosion" 28
+	leak "leak" 40 50
+	leak "flame" 80 80
+	leak "big leak" 80 30
+	"final explode" "final explosion large" 1
+	description "This is a extensively modified Osprey. Someone must have put some serious work into it, because the ship does not have much in common with the original besides its look from the outside."
+
 ship "Crow"
 	sprite "ship/Crow"
 	attributes
@@ -98,6 +166,8 @@ ship "Crow"
 	gun -13 -59 "Meteor Missile Launcher"
 	turret -18 0 "Modified Blaster Turret"
 	turret 18 0 "Modified Blaster Turret"
+	leak "leak" 50 50
+	leak "flame" 70 80
 	explode "tiny explosion" 15
 	explode "small explosion" 34
 	explode "medium explosion" 18

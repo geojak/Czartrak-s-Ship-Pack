@@ -1,51 +1,29 @@
-fleet "Small Southern Pirates"
-	add variant 1
-		"Crow"
-		
-fleet "Large Southern Pirates"
-	add variant 1
-		"Crow (Heavy Rockets)"
-	add variant 1
-		"Crow"
-		"Sparrow"
-	
-fleet "Large Independent"
-	add variant 1
-		"Crow (Flamethrower)" 2
-	add variant 2
-		"Crow (Flamethrower)" 
-		"Fury (Flamethrower)" 
-		
-fleet "Small Independent"
-	add variant 1
-		"Fury (Flamethrower)" 3	
-		
-fleet "Large Core Pirates"
-	add variant 1
-		"Crow (Quad Blaster)"
-		"Hawk (Speedy)" 
-		
-fleet "Small Northern Pirates"
-	add variant 2
-		"Crow (Laser)"	
+fleet "Small Northern Merchants"
+		add varaint 1
+			"Lampyrid-Class Transport"
 
-fleet "Large Northern Pirates"
-	add variant 1
-		"Crow (Laser)"	2
-		
 fleet "Korath Home"
-	add variant 12
+	add variant 7
 		"Korath Seedship"
-	add variant 12
+	add variant 5
 		"Korath Seedship (Guns)" 2
-
 
 fleet "Kor Efret Home"
 	personality
 		timid
-	add variant 1
+	add variant 3
 		"Korath Seedship"
 	add variant 1
 		"Korath Seedship" 2
 
-
+fleet "Korath Raid"
+	add variant 1
+		"Korath Seedship (Jump)"
+	
+fleet "Korath Ember Waste Raid"
+	add variant 1
+		"Korath Seedship (Jump, Gun)" 2
+		"Korath Raider (Ember)"
+		"Korath Chaser" 2
+	add variant 1
+		"Korath Seedship (Jump, Gun)" 3

@@ -1,6 +1,6 @@
 mission "Fake ID"
-	name "A second Chance"
-	description "A shady guy, called Black offered to sell a clean vanilla ID to leave any criminal records behind in exchange for a Jump Drive."
+	name "Fake ID"
+	description "Bring a Jump Drive to Featherwight in the Mebsuta System. Intercepting Fleets in orbit need to be eliminated before the transaction can be safely completed."
 	source
 		government "Pirate"
 		attributes "north pirate"
@@ -15,8 +15,11 @@ mission "Fake ID"
 		"reputation: Merchant" = 10
 		"reputation: Navy (Oathkeeper)" = 100
 		"reputation: Neutral" = 1
+		"reputation: Independent" = 10
 		"reputation: Pirates" = -10
-		dialog `Blacks' vassals quickly and carefully remove your jump drive and replace it with an ordinary hyperdrive. You sincerely hope that you are not making a mistake by giving him this technology. "One more thing," Black says as he hands you your new Identification Card, "don't expect any alien beings to be fooled by your new shiny name. It was a pleasure making business with you."`
+		"reputation: Deep Security" = 1
+		event "joined the civilians"
+		dialog `Blacks' vassals quickly and carefully remove your jump drive and replace it with an ordinary hyperdrive. You sincerely hope that you are not making a mistake by giving him this technology. "One more thing," Black says as he hands you your new Identification Card, "don't expect any alien beings to be fooled by your new shiny ID. It was a pleasure doing business with you."`
 	to offer
 		random > 35
 		has "main plot completed"
@@ -25,9 +28,9 @@ mission "Fake ID"
 			"reputation: Syndicate" < -210
 			"reputation: Free Worlds" < -210
 	on offer
-		log "A shady guy, called Black offered to sell a clean ID in exchange for a Jump Drive. Can I really leave my past behind so easily?"	
+		log "A mysteroius guy, called Black offered to sell me a clean Identity to leave my criminal records behind... in exchange for a Jump Drive. Can I really leave my past behind so easily?"	
 		conversation
-			`You sit in a smoky pirate bar. It is not very crowded today, but one guy on the other side of the room keeps looking at you. After about ten minutes of starring, he slowly walks towards you and says, "So, you must be <last>, the legendary war hero and outlaw. I have an interesting offer for you."`
+			`You sit in a smoky pirate bar. It is not very crowded today, but one guy on the other side of the room keeps looking over. After about ten minutes of starring, he slowly walks towards you and says, "So, you must be <last>, the legendary war hero and outlaw. I have an offer for you."`
 			choice
 				`	"Who do I have the pleasure of talking to?"`
 					goto "who"
@@ -36,15 +39,15 @@ mission "Fake ID"
 				`	"I don't do business with people like you."`
 					goto "decline"
 			label "who"
-			`	"You can call me Black. I am an independent traveller and despite the place we are meeting, I am actually not into illegal stuff, but it happens that what I am looking for can not be acquired anywhere without drawing the attention of military."`
-			`	After a brief moment he continues, "During the Pug invasion a few Alien wreckages were salvaged, since you were actively participating in the battle, does it happen, that you have gotten hands onto a Jump Drive?"`
+			`	"You can call me Black. I am an independent traveller and despite the place we are meeting, I am actually not into illegal stuff, but it happens that what I am looking for can not be acquired anywhere else without drawing the attention of the military."`
+			`	After a brief moment he continues, "During the Pug invasion a few Alien wreckages were salvaged. Since you were actively participating in the battle, by any chance, have you gotten hands onto a Jump Drive?"`
 			choice
 				`	"Let's say I do own a Jump Drive. What do you offer in return?"`
 					goto "offer2"
 				`	"Sorry Black, you got the wrong guy."`
 					goto "decline"
 			label "offer2"
-			`	"It seems to me, that you have gotten into trouble with the law enforcement recently, I offer you a second chance. A clean name, surely illegal but untraceable."`
+			`	"It seems to me, that you have gotten into trouble with the law enforcement recently, I offer you a second chance. A clean name, completelty untraceable top notch forgery."`
 			`	"So, do we have a deal"?`
 			choice
 				`	"Alright Black, I will get you a Jump Drive."`
@@ -52,7 +55,7 @@ mission "Fake ID"
 				`	"I am not interested."`
 					goto "decline"
 			label offer
-			`	He must have anticipated this moment for a long time as blurbs out of him, "It seems to me, that you have gotten into trouble with the law enforcement, I offer you a second chance. A clean name, surely illegal but untraceable."`
+			`	He must have anticipated this moment for a long time as it blurbs out of him, "It seems to me, that you have gotten into trouble with the law enforcement, I offer you a second chance. A clean name, completelty untraceable top notch forgery."`
 			`	After a brief moment he continues, "During the Pug invasion a few Alien wreckages salvaged, since you were actively participating in the battle, do you happen to have gotten hands onto a Jump Drive?"`
 			choice
 				`	"Fine, I'll hand you a Jump Drive over."`
@@ -65,12 +68,32 @@ mission "Fake ID"
 				decline
 			label "accept"
 			apply
-			`	Black seems exited. "I will get you papers ready, Captain," he says. "We meet at Featherweight. You can trust me that this is not a trap, since I would not risk the Jump Drive to be destroyed. See you soon, Captain."`
+			`	Black seems exited. "I will get you papers ready, Captain," he says. "We meet at Featherweight. You can trust me that this is not a trap, since I would not risk the Jump Drive to be destroyed. One more thing, if you get intercepted you will have to destroy any enemy ships before we can safely complete our transaction. See you soon, Captain."`
 				accept
 			label "accept2"
 			apply
-			`	He seems exited. "I will get you papers ready, Captain," he says. "We meet at Featherweight. You can trust me that this is not a trap, since I would not risk the Jump Drive to be destroyed. By the way, Captain, you can call me Black."`
+			`	He seems exited. "I will get you papers ready, Captain," he says. "We meet at Featherweight. You can trust me that this is not a trap, since I would not risk the Jump Drive to be destroyed. One more thing, if you get intercepted you will have to destroy any enemy ships before we can safely complete our transaction. By the way Captain, you can call me Black."`
 				accept
+	npc kill
+		government "Alpha"
+		personality staying target
+		system Mebsuta
+			distance 1 1
+		fleet
+			names "republic capital"
+			variant
+				"Viscount (Mark II)"
+				"Lance" 2
+				"Frigate (Mark II)" 4
+				"Rainmaker (Mark II)" 3
+				"Gunboat (Mark II)" 3
+			variant
+				"Viscount"
+				"Lance" 2
+				"Frigate" 4
+				"Rainmaker" 6
+				"Gunboat" 4
+		dialog "The intercepting Fleet has been destroyed. Return to <destination> for your payment."
 	on complete
 		outfit "Jump Drive" -1
 		outfit "Hyperdrive" 1
@@ -81,6 +104,13 @@ mission "Fake ID"
 		"reputation: Merchant" = 10
 		"reputation: Navy (Oathkeeper)" = 100
 		"reputation: Neutral" = 1
+		"reputation: Pirate" = -10
+		"reputation: Independent " = 10
 		conversation
-			Blacks' vassals quickly and carefully remove your jump drive and replace it with an ordinary hyperdrive. You sincerely hope that you are not making a mistake by giving him this technology. "One more thing," Black says as he hands you your new Identification Card, "don't expect any alien beings to be fooled by your new shiny name. It was a pleasure making business with you."`
-		
+			`Blacks' vassals quickly and carefully remove your jump drive and replace it with an ordinary hyperdrive. You sincerely hope that you are not making a mistake by giving him this technology. "One more thing," Black says as he hands you your new Identification Card, "don't expect any alien beings to be fooled by your new shiny name. It was a pleasure making business with you."`
+		log "I have decided to take Blacks offer and traded a Jump Drive for his forged fake ID in order to leave my criminal records behind. Once more I am treated like a fresh pilot all over Human Space."	
+	
+
+event "joined the civilians"
+	government "Escort"
+		swizzle 5		

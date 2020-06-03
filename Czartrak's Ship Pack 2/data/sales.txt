@@ -1,7 +1,58 @@
 shipyard "Crow"
-	"Crow"
+	"Lampyrid-Class Transport"
 	
 planet "Smuggler's Den"
 		shipyard "Crow"
 planet Haven
 		shipyard "Crow"
+		
+event "mOsprey2"
+	shipyard "Crow"
+		"Crow"
+		"Modified Osprey "
+	
+	fleet "Large Northern Pirates"
+		add variant 1
+			"Modified Osprey (Sidewinder)"
+	fleet "Small Southern Pirates"
+		add variant 1
+			"Crow"					
+	fleet "Large Southern Pirates"
+		add variant 1
+			"Modified Osprey (Javelin)"
+		add variant 1
+			"Modified Osprey "
+		add variant 1
+			"Crow (Heavy Rockets)"
+		add variant 1
+			"Crow"
+			"Sparrow"		
+	fleet "Large Independent"
+		add variant 1
+			"Crow (Flamethrower)" 2
+		add variant 2
+			"Crow (Flamethrower)" 
+			"Fury (Flamethrower)" 			
+	fleet "Small Independent"
+		add variant 1
+			"Fury (Flamethrower)" 3				
+	fleet "Large Core Pirates"
+		add variant 1
+			"Crow (Quad Blaster)"
+			"Hawk (Speedy)" 			
+	fleet "Small Northern Pirates"
+		add variant 2
+			"Crow (Laser)"	
+	fleet "Large Northern Pirates"
+		add variant 1
+			"Crow (Laser)"	2
+
+mission "mOsprey"
+	landing
+	invisible
+	to offer
+		has "event: stack core for sale"
+	on offer
+		event "mOsprey2"
+	to fail
+		has "mOsprey2"

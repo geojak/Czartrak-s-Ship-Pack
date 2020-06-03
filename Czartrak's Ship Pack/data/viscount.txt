@@ -15,9 +15,9 @@ ship "Viscount"
 		"heat dissipation" .35
 		"fuel capacity" 1000
 		"cargo space" 250
-		"outfit space" 1036
-		"weapon capacity" 376
-		"engine capacity" 234
+		"outfit space" 1038
+		"weapon capacity" 370
+		"engine capacity" 300
 		weapon
 			"blast radius" 260
 			"shield damage" 2600
@@ -28,8 +28,9 @@ ship "Viscount"
 		Hyperdrive
 		"X5700 Ion Thruster"
 		"X5200 Ion Steering" 
-		Torpedo 120
+		Torpedo 135
 		"Torpedo Launcher" 4
+		"Torpedo Storage Rack" 1
 		"Quad Blaster Turret" 6
 		"D94-YV Shield Generator" 2
 		"Liquid Helium Cooler"
@@ -59,6 +60,9 @@ ship "Viscount"
 	engine 30 264.5
 	engine 0 257
 	engine -26 265.5
+	leak "leak" 30 50
+	leak "flame" 30 80
+	leak "big leak" 30 30
 	fighter 80 1.5
 	fighter -82.5 6.5
 	explode "small explosion" 25

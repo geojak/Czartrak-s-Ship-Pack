@@ -5,8 +5,8 @@ ship "Nesasio"
 		licenses
 			Navy
 		"cost" 8200000
-		"shields" 9600
-		"hull" 2400
+		"shields" 8800
+		"hull" 2100
 		"required crew" 41
 		"bunks" 57
 		"mass" 440
@@ -50,6 +50,9 @@ ship "Nesasio"
 	gun 4.5 -140
 	gun -12.5 -140
 	turret -4 -32
+	leak "leak" 40 50
+	leak "flame" 50 80
+	leak "big leak" 90 30
 	engine 15.5 134.5
 	engine -22 134.5
 	drone -63 58.5

@@ -33,6 +33,8 @@ mission "Bounty Hunting (huge)"
 				"Kestrel (More Engines)"
 			variant 3
 				"Sentinel (Particle)"
+			variant 3
+				"Marauder Fury" 6
 		dialog "The <npc> has been eliminated. You can claim the bounty payment by returning to <destination>."
 	on complete
 		payment 300000

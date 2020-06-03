@@ -1,4 +1,4 @@
-ship "Viscount""Viscount (Mark II)"
+ship "Viscount" "Viscount (Mark II)"
 	outfits
 		Hyperdrive
 		"A860 Atomic Thruster"
@@ -28,3 +28,17 @@ ship "Viscount""Viscount (Mark II)"
 	gun 26 -267.5 "Typhoon Launcher"
 	gun -25 -268.5 "Typhoon Launcher"
 	gun -37.5 -255 "Typhoon Launcher"
+	
+ship "Viscount" "Viscount (Mark III)"
+	outfits
+		Hyperdrive
+		"Tyrant Plasma Steering"
+		"Tyrant Plasma Thruster"
+		"Liquid Nitrogen Cooler"
+		"Electron Turret" 6
+		"D94-YV Shield Generator" 
+		"Armageddon Core" 
+		"Fragmentation Grenades" 325
+		"Laser Rifle" 400
+		"Anti-Missile Turret" 2
+		"LP576a Battery Pack"

@@ -55,6 +55,9 @@ ship "Battleship"
 	turret -48 111 "Heavy Laser Turret"
 	turret 48 -64 "Heavy Laser Turret"
 	turret 48 111 "Heavy Laser Turret"
+	leak "leak" 30 50
+	leak "flame" 30 80
+	leak "big leak" 30 30
 	explode "tiny explosion" 25
 	explode "small explosion" 50
 	explode "medium explosion" 53
@@ -114,6 +117,9 @@ ship "Battlecruiser"
 	turret 0 80
 	turret 28 80
 	turret -28 80
+	leak "leak" 30 50
+	leak "flame" 50 80
+	leak "big leak" 40 30
 	engine -40 146
 	engine 40 146
 	explode "tiny explosion" 20
@@ -131,8 +137,8 @@ ship "Destroyer"
 		licenses
 			Navy
 		"cost" 6700000
-		"shields" 9200
-		"hull" 3500
+		"shields" 8400
+		"hull" 2700
 		"required crew" 34
 		"bunks" 52
 		"mass" 410
@@ -170,6 +176,9 @@ ship "Destroyer"
 	turret -0 -6.5
 	turret -28 47
 	turret 28 47
+	leak "leak" 40 50
+	leak "flame" 50 80
+	leak "big leak" 90 30
 	engine -26.5 116
 	engine 26.5 116
 	explode "tiny explosion" 18
@@ -204,7 +213,8 @@ ship "Sentinel"
 	outfits
 		"Proton Gun" 7
 		"Heavy Rocket Launcher" 4
-		"Heavy Rocket" 400
+		"Heavy Rocket" 120
+		"Heavy Rocket Rack" 4
 		"Anti-Missile Turret" 
 
 		"Fusion Reactor"
@@ -276,6 +286,9 @@ ship "Navy Freighter"
 		
 	engine -29 164
 	engine 29 164
+	leak "leak" 30 50
+	leak "flame" 50 80
+	leak "big leak" 40 30
 	explode "small explosion" 15
 	explode "medium explosion" 25
 	explode "large explosion" 35
@@ -308,18 +321,17 @@ ship "Pug Zambor"
 		"turn" 700
 		"turning heat" 3.5
 		weapon
-			"blast radius" 100
-			"shield damage" 400
-			"hull damage" 200
-			"hit force" 600
+			"blast radius" 75
+			"shield damage" 350
+			"hull damage" 175
+			"hit force" 500
 	outfits
 		"Pug Zapper" 2
 		"Pug Biodefenses" 1
 		"Pug Akfar Thruster"
-	engine -7 35
-	engine 7 35
-	gun -15 -42 "Pug Zapper"
-	gun 15 -42 "Pug Zapper"
+	engine 0 22 1.2
+	gun -14 -10 "Pug Zapper"
+	gun 14 -10 "Pug Zapper"
 	explode "tiny explosion" 10
 	explode "small explosion" 15
 	explode "medium explosion" 20
@@ -327,70 +339,24 @@ ship "Pug Zambor"
 	"final explode" "final explosion small"
 	description "This is a Pug Fighter design. It is essentially a clumsy, weaker Zibruka that can be carried on a parent ship. It is surprisingly heavy for its size and you have no idea how it manages to turn."
 	
-ship "Pug Mazdar"
-	sprite "ship/pug_mazdar"
-	attributes
-		category "Medium Warship"
-		"cost" 7700000
-		"shields" 6800
-		"hull" 1800
-		"required crew" 19
-		"bunks" 27
-		"mass" 480
-		"drag" 6
-		"heat dissipation" .7
-		"fuel capacity" 600
-		"cargo space" 40
-		"outfit space" 260
-		"weapon capacity" 116
-		"engine capacity" 124
-		"energy generation" 22
-		"shield generation" 8
-		"shield energy" 8
-		"heat generation" 32
-		"energy capacity" 2000
-		weapon
-			"blast radius" 180
-			"shield damage" 720
-			"hull damage" 360
-			"hit force" 1080
-	outfits
-		"Pug Seeker" 2
-		"Pug Anti-Missile"
-		"Pug Biodefenses" 6
-		"Jump Drive"
-		"Pug Cormet Thruster"
-		"Pug Cormet Steering"
-	engine -11 68
-	engine 11 68
-	gun -11 -85 "Pug Seeker"
-	gun 11 -85 "Pug Seeker"
-	fighter 0 -36 under
-	turret 0 7 "Pug Anti-Missile"
-	explode "tiny explosion" 5
-	explode "small explosion" 20
-	explode "medium explosion" 25
-	explode "large explosion" 15
-	"final explode" "final explosion medium"
-	description "This is a Pug Enfolta which has been modified to carry a fighter. However to achieve this, the Pug had to remove the ship's zappers."
-	
-ship "Pug Embor"
-	sprite "ship/pug_embor"
+ship "Pug Yubera"
+	sprite "ship/pug_carrier"
+	thumbnail "ship/pug_carrier"
 	attributes
 		category "Heavy Warship"
 		"cost" 10200000
 		"shields" 12300
 		"hull" 2500
 		"required crew" 54
-		"bunks" 81
-		"mass" 920
-		"drag" 9.6
+		"bunks" 87
+		"mass" 940
+		"drag" 9.8
 		"heat dissipation" .65
 		"fuel capacity" 600
-		"cargo space" 50
-		"outfit space" 470
-		"weapon capacity" 216
-		"engine capacity" 148
+		"cargo space" 65
+		"outfit space" 480
+		"weapon capacity" 210
+		"engine capacity" 150
 		"energy generation" 31
 		"shield generation" 9
 		"shield energy" 9
@@ -402,25 +368,34 @@ ship "Pug Embor"
 			"hull damage" 600
 			"hit force" 1800
 	outfits
-		"Pug Seeker" 2
-		"Pug Zapper Turret"
-		"Pug Anti-Missile" 2
+		"Pug Seeker" 4
+		"Pug Zapper Turret" 2
+		"Pug Anti-Missile"
 		"Pug Biodefenses" 8
-		"Jump Drive"
 		"Pug Lohmar Thruster"
 		"Pug Lohmar Steering"
-	engine -20 136
-	engine 20 136
-	gun -10 -150 "Pug Seeker"
-	gun 10 -150 "Pug Seeker"
-	turret 0 -50 "Pug Zapper Turret"
-	turret -15 -35 "Pug Anti-Missile"
-	turret 15 -35 "Pug Anti-Missile"
-	fighter 71 -32.5 under
-	fighter -71 -32.5 under
-	explode "small explosion" 25
-	explode "medium explosion" 30
-	explode "large explosion" 20
-	explode "huge explosion" 5
+		"Jump Drive"
+		
+	engine -30.5 120.5 0.3
+	engine -12 125 0.5
+	engine 12 125 0.5
+	engine 30.5 120.5 0.3
+	gun -20 -79 "Pug Seeker"
+	gun 20 -79 "Pug Seeker"
+	gun -10 -94 "Pug Seeker"
+	gun 10 -94 "Pug Seeker"
+	turret 0 -50 "Pug Anti-Missile"
+	turret -15 -35 "Pug Zapper Turret"
+	turret 15 -35 "Pug Zapper Turret"
+	explode "pug small explosion" 25
+	explode "pug medium explosion" 30
+	explode "pug large explosion" 20
+	explode "pug huge explosion" 5
+	fighter 88 -14 under
+	fighter -88 -16.5 under
+	fighter -55 -4.5 under
+	fighter 55 -7.5 under
+	fighter 0 -9.5 over
+	fighter 0 20.5 under
 	"final explode" "final explosion large"
-	description "This ship is a modified Maboro. The Pug made this ship to carry two Zambor fighters."
+	description "The Pug Yubera is a heavy carrier made by the Pug. It is capable of carrying six Zambor fighters."
